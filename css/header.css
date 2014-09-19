@@ -49,11 +49,64 @@ body{
 	border: none;
 }
 
+/* If I want my image in the header layout to be on the left */
+#header .img_left{
+	float: left;
+	margin-right: 10px;
+	width: 40px;
+}
+
 #header li ul{
 	/* Don't need the bullet point */
 	list-style: none;
 	padding: 0px;
 	margin-top: 1px;
+}
+
+.clear{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+#header .whiteBorder{
+	border: 1px solid white;
+}
+
+#header .black_box{
+		background: rgba(0, 0, 0, 0.4);
+		padding: 5px;
+		margin-bottom: 5px;
+		/* Compatible with Chrome */
+		border-radius: 5px;
+}
+
+#header #social_id{
+	float: right;
+	width: auto;
+	/* top (left,right) bottom */
+	margin: 5px 15px 0px;			/* Depends on the size of the social icons */
+	padding: 0px;
+	overflow: hidden;
+}
+
+/* Individual social icon */
+#header #social_id li{
+	margin-right: 12px;
+	float: left;
+	width: 24px;
+	height: 32px;
+	padding: 0px;
+	/* No bullet points (again) */
+	list-style: none;
+}
+
+/* Individual social icon (on hover) */
+#header #social_id li:hover{
+	margin-top: -1px;
 }
 
 #header_menu{
@@ -62,12 +115,57 @@ body{
 	width: auto;
 }
 
+/* element i.e the button */
 #header_menu li{
 	list-style: none;
 	float: left;
 	font-size: 12px;
-	padding: 12px 14px 14px 14px;
-	border-right: 1px solide rgba(0,0,0,0.4);
+	/* top left bottom right */
+	padding: 16px 14px 20px 14px;
+	border-right: 1px solid rgba(0,0,0,0.4);
 	background: rgba(0,0,0,0.1);
 }
+
+#header_menu li:hover{
+	background: rgba(0,0,0,0.3);
+}
+
+#header_menu li a{
+	display: block;
+	color: #cccccc;
+	text-decoration: none;	
+}
+
+#header_menu li a:hover{
+	color: white;
+}
+
+#header_menu .HOME_BUTTON{
+	/* Change padding to move around the Home Button */
+	padding: 5px 8px 0px 14px;
+	border: none;
+	background: none;
+}
+#header_menu .HOME_BUTTON:hover{
+	background: none;
+	
+}
+
+#header_menu .HOME_BUTTON a{
+	background: url("../images/home_button.png") top left no-repeat;
+	width: 36px;
+	height: 30px;
+}
+
+#header_menu .HOME_BUTTON a:hover{
+	background: url("../images/home_button2.png") top left no-repeat;
+}
+
+
+
+
+
+
+
+
 
