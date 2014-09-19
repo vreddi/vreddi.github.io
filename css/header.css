@@ -88,7 +88,7 @@ body{
 	float: right;
 	width: auto;
 	/* top (left,right) bottom */
-	margin: 5px 15px 0px;			/* Depends on the size of the social icons */
+	margin: 4px 15px 0px;			/* Depends on the size of the social icons */
 	padding: 0px;
 	overflow: hidden;
 }
@@ -97,16 +97,19 @@ body{
 #header #social_id li{
 	margin-right: 12px;
 	float: left;
-	width: 24px;
-	height: 32px;
 	padding: 0px;
 	/* No bullet points (again) */
 	list-style: none;
 }
 
+#header #social_id li img{
+	width: 24px;
+	height: 32px;
+}
+
 /* Individual social icon (on hover) */
 #header #social_id li:hover{
-	margin-top: -1px;
+	margin-top: 3px;
 }
 
 #header_menu{
