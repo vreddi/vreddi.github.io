@@ -1,5 +1,5 @@
 body{
-	background:url("../images/wood_wallpaper.jpg") repeat;	
+	background:url("../images/bkg.png") repeat;	
 }
 
 /* Want it to stick to the top i.e fixed positioning */
@@ -124,7 +124,7 @@ body{
 	float: left;
 	font-size: 12px;
 	/* top left bottom right */
-	padding: 16px 14px 20px 14px;
+	padding: 12px 14px 20px 14px;
 	border-right: 1px solid rgba(0,0,0,0.4);
 	background: rgba(0,0,0,0.1);
 }
@@ -143,32 +143,129 @@ body{
 	color: white;
 }
 
-#header_menu .HOME_BUTTON{
+#header_menu .BUTTON{
 	/* Change padding to move around the Home Button */
 	padding: 5px 8px 0px 14px;
 	border: none;
 	background: none;
 }
-#header_menu .HOME_BUTTON:hover{
+#header_menu .BUTTON:hover{
 	background: none;
-	
 }
 
-#header_menu .HOME_BUTTON a{
-	background: url("../images/home_button.png") top left no-repeat;
-	width: 36px;
-	height: 30px;
+/* Menu Drop-Down */
+#header_menu li ul.dropdown{
+	display: none;
 }
 
-#header_menu .HOME_BUTTON a:hover{
-	background: url("../images/home_button2.png") top left no-repeat;
+#header_menu li ul.dropdown:hover{
+	display: block;
+	position: absolute;
+	margin: 0px 0px 0px -15px;
+	top: 50px;
+	border: 1px solid black; 
+	border-top: none;
+	background: rgba(0,0,0,0.5);
+	border-radius: 0px 0px 7px 7px;
 }
 
 
+/* Drop-Down Default Links */
 
+#header_menu li:hover a{
+	color: #aaaaaa;
+}
 
+#header_menu li:hover a:hover{
+	color: white;
+}
 
+/* Header Link */
 
+#header_menu li:hover a.headerLinks{
+	font-size: 14px;
+	text-decoration: underline;
+	color: #cc000000;
+	margin-top: 10px;
+	margin-left: 10px;
+}
 
+#header_menu li:hover a.headerLinks:hover{
+	color: white;
+	cursor: pointer;
+}
 
+/* List links */
 
+#header_menu li:hover a.listLinks{
+	font-size: 12px;
+	color: #aaaaaa;
+	margin-left: 10px;
+}
+
+#header_menu li:hover a.listLinks:hover{
+	color: white;
+	cursor: pointer;
+}
+
+/* The buttons we want on the right */
+#header_menu .right{
+	float: right;
+	right: 0px;
+	margin-right: 2px;
+	border-right:none;
+	border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+/* Layouts (1 column, 2 column, 3 column)*/
+#header .one_column_layout, #header .two_column_layout, #header .three_column_layout{
+	margin: 4px;
+	position: absolute;
+	padding-top: 15px;
+	text-align: left;
+	display: none;
+}
+
+/* Width Of Each Layout */
+#header .one_column_layout{
+	width: 140px;
+}
+
+#header .two_column_layout{
+	width: 280px;
+}
+
+#header .three_column_layout{
+	width: 420px;
+}
+
+/* Display Drop-Down Menus on Hover */
+#header_menu li:hover .one_column_layout,#header_menu li:hover .two_column_layout,#header_menu li:hover .three_column_layout{
+	display: block;
+	position: absolute;
+	margin: 0 0 0 -15px;
+	top: 50px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 0px 0px 7px 7px;
+}
+
+/* All Columns must be placed inside a layout */
+#header .col_1, #header .col_2, #header .col_3{
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#header .col_1{
+	width: 130px;
+}
+
+#header .col_2{
+	width: 270px;
+}
+
+#header .col_3{
+	wdth: 410px;
+}
