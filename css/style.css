@@ -49,6 +49,22 @@ body{
 
 }
 
+
+#header_slider{
+	margin-top: 190px;
+	display: none;
+	float: right;
+	font-family: 'Ubuntu', serif;
+	font-size: 48px;
+	text-decoration: underline;
+	color: blue;
+	-webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+
+}
+
 .content{
 	font-family: 'Ubuntu', serif;
     font-size: 48px;
