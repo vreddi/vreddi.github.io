@@ -1,3 +1,10 @@
+/*
+This JS file is used for the 'home page'.
+The 'other pages' like experience page, contact page, resume page,
+is governed by header_title.js and not this file even though some functions
+are repeated in both of the files.
+*/
+
 var isShowing = true;
 var i1 = 0;
 var i2 = 0;

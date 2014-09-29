@@ -1,21 +1,33 @@
-setOnetime(function(){
+/*
+This JS file is used for the 'other pages' like the experience page, contact page..etc
+The home page is governed by script.js and not this file even though some functions
+are repeated in both of the files.
+*/
 
-	if ( document.URL.contains("experience.html") ){
-		header_slider.style.display = "block";
-		header_slider.style.float = "left";
-	}
-	else if( document.URL.contains("projects.html")){
-		header_slider.style.display = "block";
-		header_slider.style.float = "left";
-	}
-	else if( document.URL.contains("blog.html")){
-		header_slider.style.display = "block";
-		header_slider.style.float = "left";
-	}
-	else if( document.URL.contains("contact.html")){
-		header_slider.style.display = "block";
-		header_slider.style.float = "left";
-	}
-	
+var isShowing = true;
 
-}, 500);
+
+
+setTimeout(function(){
+		header_slider.style.marginLeft = "0%";
+}, 0);
+
+setTimeout(function(){
+		header_slidercr.style.marginLeft = "0%";
+}, 0);
+
+//Used to Show the footer when the scroll reaches the bottom of the page
+$(window).scroll(function() {
+    if ($(window).scrollTop() + $(window).height() === $(document).height()) {
+        isShowing = true;
+        footer.style.display = "block";
+        bottom_shadow.style.display = "block";
+
+    } 
+
+    else if (isShowing === true && $(window).scrollTop() + $(window).height() <= $(document).height() * 0.9) {
+        isShowing = false;
+        footer.style.display = "none";
+  		bottom_shadow.style.display = "none";
+    }
+}); 
