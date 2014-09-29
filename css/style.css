@@ -45,6 +45,10 @@ body{
 	
 }
 
+#hello{
+
+}
+
 .content{
 	font-family: 'Ubuntu', serif;
     font-size: 48px;
@@ -65,18 +69,28 @@ body{
  	background-size: 150%;
  	border-radius: 50%;
 
+ 	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
 }
 
 #circular_image2{
  	width: 250px;
  	height: 250px;
  	display: inline-block;
- 	background: url('http://i1197.photobucket.com/albums/aa426/Jastner/childhood.jpg');
+ 	background: url('http://i1197.photobucket.com/albums/aa426/Jastner/OrientationICAS.jpg');
  	background-repeat: no-repeat;
  	background-attachment: scroll;
- 	background-position: -250px -200px; 
+ 	background-position: -200px 0px; 
  	background-size: 300%;
  	border-radius: 50%;
+
+ 	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 
 }
 
@@ -84,12 +98,17 @@ body{
  	width: 250px;
  	height: 250px;
  	display: inline-block;
- 	background: url('http://i1197.photobucket.com/albums/aa426/Jastner/jam_night.jpg');
+ 	background: url('http://i1197.photobucket.com/albums/aa426/Jastner/Orientationperformance.jpg');
  	background-repeat: no-repeat;
  	background-attachment: scroll;
- 	background-position: 0px -45px; 
- 	background-size: 120%;
+ 	background-position: -800px -150px; 
+ 	background-size: 500%;
  	border-radius: 50%;
+
+ 	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 
 
 }
