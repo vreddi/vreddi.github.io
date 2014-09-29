@@ -27,6 +27,7 @@ body{
 
 #bottom_shadow{
 	position: fixed;
+	display: none;
 	bottom: 0px;
 	margin: 0;
 	padding: 0;
@@ -53,10 +54,79 @@ body{
 	color: rgba(0,0,0,1);
 }
 
+#circular_image1{
+	display: inline-block;
+ 	width: 250px;
+ 	height: 250px;
+ 	background: url('../images/my_pics/dp.png');
+ 	background-repeat: no-repeat;
+ 	background-attachment: scroll;
+ 	background-position: -50px 0px; 
+ 	background-size: 150%;
+ 	border-radius: 50%;
+
+ 	-webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+
+#circular_image2{
+ 	width: 250px;
+ 	height: 250px;
+ 	display: inline-block;
+ 	background: url('../images/my_pics/childhood.jpg');
+ 	background-repeat: no-repeat;
+ 	background-attachment: scroll;
+ 	background-position: -250px -200px; 
+ 	background-size: 300%;
+ 	border-radius: 50%;
+
+ 	-webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+#circular_image3{
+ 	width: 250px;
+ 	height: 250px;
+ 	display: inline-block;
+ 	background: url('../images/my_pics/jam_night.jpg');
+ 	background-repeat: no-repeat;
+ 	background-attachment: scroll;
+ 	background-position: 0px -45px; 
+ 	background-size: 120%;
+ 	border-radius: 50%;
+
+ 	-webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+
+
+#footer {
+	font-size: 15px;
+	font-family: Arial;
+	text-align: center;
+	position: fixed;
+	display: none;
+	z-index: 100;
+	margin: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 70px;
+}
 
 /* Want it to stick to the top i.e fixed positioning */
 #header{
 	position: fixed;
+	z-index: 100;
 	top: 0px;
 	margin: 0;
 	padding: 0;
