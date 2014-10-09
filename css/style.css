@@ -45,6 +45,59 @@ body{
 	
 }
 
+#contentBorder{
+	float: left;
+	margin-top: 10px;
+	position: relative;
+	margin-left: 1%;
+	border: solid 1px black;
+}
+
+.pageContentHeader{
+	display: inline-block;
+	font-family: 'Ubuntu', serif;
+    font-size: 28px;
+    text-decoration: none;
+	color: black;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+a:link{
+	color: black;
+	text-decoration: none;
+}
+a:visited{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: black;
+	text-decoration: none;
+}
+a:active{
+	color: black;
+	text-decoration: none;
+}
+
+
+.subContent{
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+    font-size: 18px;
+	color: rgba(92,92,92,1);
+}
+
+.pageContent{
+
+	margin-left: 5%;
+	margin-top: 5px;
+	font-family: 'Ubuntu', serif;
+    font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+
 #hello{
 
 }
@@ -220,7 +273,7 @@ body{
 	height: 0px;
 }
 
-#header .whiteBorder{
+#header .whiteBorder{ 
 	border: 1px solid white;
 }
 
