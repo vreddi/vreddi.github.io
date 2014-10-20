@@ -7,6 +7,9 @@
 		<!-- Linking the CSS file -->
 		<link rel="stylesheet" href="../css/style.css" type="text/css" />
 
+		<!--Favicon-->
+		<link rel="shortcut icon" href="http://i176.photobucket.com/albums/w171/Bolaeisk/DarthVader2.png" type="image/x-icon">
+
 		<!-- Need dem fonts! -->
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
 
@@ -70,7 +73,7 @@
 			
 				<!-- LINKEDIN	 -->
 				<li>
-					<a href="www.linkedin.com/in/vishrutreddi/"><img src="../images/social_icons/linkedin_icon.png"></a>
+					<a href="https://www.linkedin.com/in/vishrutreddi"><img src="../images/social_icons/linkedin_icon.png"></a>
 				</li>
 			
 				<!-- GITHUB -->
@@ -92,11 +95,53 @@
 		<img src="http://i1197.photobucket.com/albums/aa426/Jastner/Blog_header.png">
 	</div>
 	
+	<!--BLOG POSTS-->
+	<dl>
+		<!--BLOG POST 1-->
+		<dt>
+			<div style="float: left; color:grey; border-right: 1px solid grey;">
+				18th October 2014 &nbsp &nbsp  
+			</div>
+			&nbsp The Day After Tomorrow
+		</dt>
+		<dd><article><p>Today is Saturday. So the title suggests the day Monday. Not cool title not cool. Let the weekend be.</p></article></dd>
+	</dl>
+
 	<div id="footer">
 		&copy Copyright 2014 Vishrut Reddi <br>
 		Portfolio
 	</div>
 
+
+	<script>
+	$(function(){
+
+		var dd = $('dd');
+
+		dd.hide();
+
+		//dd.filter(':nth-child(n+4)').addClass('hide');
+
+
+		//Earlier the Event listner was like:
+		//$('dt').on('mouseenter', function(){})();
+		//But if we have a lot of 'dt's then the event listener will be called
+		//a lot of times which is not good performance-wise. Therefore we added a new
+		//second parameter which basically says that the event listner would work for the 
+		//parent (dl) only if the 'mouseenter' is on 'some' particular child ONLY. In this
+		//case it is dt.
+		$('dl').on('click', 'dt', function(){
+			$(this)
+				.next()
+					.slideDown(200)				//Earlier was .show()
+						//.siblings('dd')			//All siblling which are dd
+							//.slideUp(200);		//Earlier was .hide()
+			
+			//sildeDown/Up() parameter is the delay time (ms) of the slide
+		});
+
+	})();
+	</script>
 	
 	</body>
 </html>

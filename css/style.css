@@ -46,10 +46,10 @@ body{
 }
 
 #contentBorder{
-	float: left;
-	margin-top: 10px;
+	display: block;
 	position: relative;
-	margin-left: 1%;
+	margin-top: 10px;
+	background-color: rgba(0, 0, 0, 0.1);
 	border: solid 1px black;
 }
 
@@ -84,7 +84,6 @@ a:active{
 
 .subContent{
 	font-family: "Times New Roman", Times, serif;
-	text-align: center;
     font-size: 18px;
 	color: rgba(92,92,92,1);
 }
@@ -469,4 +468,30 @@ a:active{
 
 #header .col_3{
 	wdth: 410px;
+}
+
+dl{
+	left:25%;
+}
+
+dd{
+	margin: 0px;
+	padding: 1em 0;
+}
+
+dt{
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1.5em;
+	background: #e3e3e3;
+	border-bottom: 1px solid #c5c5c5;
+	border-top: 1px solid white;
+}
+
+dt:first-child{
+	border-top: none;
+}
+
+dt:nth-last-child(2){
+	border-bottom: none;
 }
