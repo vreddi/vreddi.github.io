@@ -45,6 +45,23 @@ body{
 	
 }
 
+ #left-container{
+	display: block-inline;
+	position: relative;
+	margin-left: 10px;
+	float: left;
+	width: 67%;
+ }
+
+ #right-container{
+ 	display: block-inline;
+ 	margin-right: 10px;
+	position: relative;
+	width: 30%;
+	float: right;
+	margin-top: 150px;
+ }
+
 #contentBorder{
 	display: block;
 	position: relative;
