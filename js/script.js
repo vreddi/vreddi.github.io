@@ -10,8 +10,37 @@ var i1 = 0;
 var i2 = 0;
 var i3 = 0;
 
+	
+var arr = new Array();
+
+			arr[0] = '"Quick....whats my favourite desert?...Jello!!!!!!!"<div style="font-size: 12px">-Phil Dunphy</div>';
 
 
+			arr[1] = '"There are no secrets in life... just hidden truths that lie beneath the surface."<br><div style="font-size: 12px"> - Dexter</div>'; 
+
+
+			arr[2] = '"Nothing is particularly hard if you divide it into small jobs."<br><div style="font-size: 12px"> - Henry Ford</div>';
+
+
+			arr[3] = '"Computer science is no more about computers than astronomy is about telescopes."<br><div style="font-size: 12px"> - Edsger Dijkstra</div>';
+
+
+			arr[4] = '"When nine hundred years old you reach, look as good you will not."<br><div style="font-size: 12px">- Master Yoda</div>';
+
+
+			arr[5] = '"There is us and the dead. We survive this by pulling together, not apart."<br><div style="font-size: 12px">- Rick Grimes</div>';
+
+
+			arr[6] = '"Those who cannot remember the past are doomed to repeat it."<br><div style="font-size: 12px">- George Santayana</div>';
+
+$(function(){
+	var size = arr.length;
+	//0 -> min value
+	//size - 1 -> max value
+	var rand = Math.floor(Math.random() * ((size - 1) - 0 + 1)) + 0;;
+	$("#header-quote").append(arr[rand]);
+
+		
 //Used to Show the footer when the scroll reaches the bottom of the page
 $(window).scroll(function() {
     if ($(window).scrollTop() + $(window).height() === $(document).height()) {
@@ -28,6 +57,8 @@ $(window).scroll(function() {
     }
 }); 
 
+})();
+/*
 //Changes circular_images every 4s
 setInterval(function(){
 	
@@ -66,6 +97,7 @@ setInterval(function(){
 	}
 
 }, 4000);
+
 
 //Changes circular_images every 4s
 setInterval(function(){
@@ -143,4 +175,4 @@ setInterval(function(){
 		i3 = 0;
 	}
 
-}, 4000);
+}, 4000);*/
