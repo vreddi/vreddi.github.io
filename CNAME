@@ -1,1 +1,4 @@
-www.vishrutreddi.com
+$dig www.vishrutreddi.com +nostats +nocomments +nocmd
+;www.vishrutreddi.com
+www.vishrutreddi.com.   73  IN  A 192.30.252.153
+www.vishrutreddi.com.   73  IN  A 192.30.252.154
