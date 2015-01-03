@@ -8,6 +8,28 @@ body{
 	height: 100%;
 }
 
+.icons{
+	background: url(../images/icons.jpg);
+	width: 47px;
+	height: 47px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 10px;
+}
+
+#git_btn{
+	background-position: 263px 198px;
+}
+
+#youtube_btn{
+	background-position: 142px 78px;
+}
+
+#demo_btn{
+	background-position: 264px 258px; 
+}
+
 #top_shadow{
 	position: fixed;
 	top: 0px;
