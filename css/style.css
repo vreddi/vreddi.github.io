@@ -62,7 +62,7 @@ body{
 	padding-top: 3px;
 	padding-right: 10px;
 	padding-left: 10px;
-	border-top: solid 2px black;
+	border-top: solid 4px black;
 	border-color: #4099FF;
 	/* No bullet points (again) */
 	list-style: none;
