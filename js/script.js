@@ -12,7 +12,7 @@ function yScroll(){
 	
 	if(yPos > 150){
 	
-			pagetop.style.height = "36px";
+			pagetop.style.height = "40px";
 			pagetop.style.paddingTop = "8px";
 			pagetop.style.paddingBottom = "8px";
 			menu.style.height = "0px";
@@ -22,38 +22,32 @@ function yScroll(){
 			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-black');
 			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-black');
 			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-black');
-			$("#social_id li:eq(4) i").attr('class', 'fa fa-github-square fa-black');
-			$("#social_id li:eq(5) i").attr('class', 'fa fa-twitch fa-black');
+			$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-black');
+			$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-black');
+			$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-black');
 	} 
 
 	else {
 		
-		pagetop.style.height = "120px";
+		pagetop.style.height = "80px";
 		pagetop.style.paddingTop = "8px";
 		pagetop.style.paddingBottom = "50px";
 		menu.style.height = "60px";
 
 
-		$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-2x fa-black');
-		$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-2x fa-black');
-		$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-2x fa-black');
-		$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-2x fa-black');
-		$("#social_id li:eq(4) i").attr('class', 'fa fa-github-square fa-2x fa-black');
-		$("#social_id li:eq(5) i").attr('class', 'fa fa-twitch fa-2x fa-black');
+		$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-1-5x fa-black');
+		$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-1-5x fa-black');
+		$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-1-5x fa-black');
+		$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-1-5x fa-black');
+		$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-1-5x fa-black');
+		$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-1-5x fa-black');
+		$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-1-5x fa-black');
 	}
 		
 }
 		
 window.addEventListener("scroll", yScroll);
 
-
-
-/*
-This JS file is used for the 'home page'.
-The 'other pages' like experience page, contact page, resume page,
-is governed by header_title.js and not this file even though some functions
-are repeated in both of the files.
-*/
 
 var isShowing = true;
 var i1 = 0;
@@ -93,20 +87,125 @@ $(function(){
 	var rand = Math.floor(Math.random() * ((size - 1) - 0 + 1)) + 0;;
 	$("#thought").append(arr[rand]);
 
+
+
+	//HOME COLOR CHANGE
+	$("#menu li:eq(0)").hover(
+	function(){
+			$("#menu li:eq(0) i").attr('class', 'fa fa-home fa-2x fa-twitter-color');
+			$("#menu li:eq(0)").css('border-color', '#D34836');
+			$("#menu li:eq(0) i").attr('text-color', '#4099FF');
+		
+	},
+
+	function(){
+			$("#menu li:eq(0) i").attr('class', 'fa fa-home fa-2x fa-black');
+			$("#menu li:eq(0)").css('border-color', '#4099FF');
+			$("#menu li:eq(0) i").attr('text-color', 'black');
+	}
+
+	);
+
+	//EXPERIENCE COLOR CHANGE
+	$("#menu li:eq(1)").hover(
+	function(){
+			$("#menu li:eq(1) i").attr('class', 'fa fa-connectdevelop fa-2x fa-twitter-color');
+			$("#menu li:eq(1)").css('border-color', '#D34836');
+			$("#menu li:eq(1) i").attr('text-color', '#4099FF');
+		
+	},
+
+	function(){
+			$("#menu li:eq(1) i").attr('class', 'fa fa-connectdevelop fa-2x fa-black');
+			$("#menu li:eq(1)").css('border-color', '#4099FF');
+			$("#menu li:eq(1) i").attr('text-color', 'black');
+	}
+
+	);
+
+	//HOME COLOR CHANGE
+	$("#menu li:eq(2)").hover(
+	function(){
+			$("#menu li:eq(2) i").attr('class', 'fa fa-code-fork fa-2x fa-twitter-color');
+			$("#menu li:eq(2)").css('border-color', '#D34836');
+			$("#menu li:eq(2) i").attr('text-color', '#4099FF');
+		
+	},
+
+	function(){
+			$("#menu li:eq(2) i").attr('class', 'fa fa-code-fork fa-2x fa-black');
+			$("#menu li:eq(2)").css('border-color', '#4099FF');
+			$("#menu li:eq(2) i").attr('text-color', 'black');
+	}
+
+	);
+
+	//RESUME COLOR CHANGE
+	$("#menu li:eq(3)").hover(
+	function(){
+			$("#menu li:eq(3) i").attr('class', 'fa fa-file fa-2x fa-twitter-color');
+			$("#menu li:eq(3)").css('border-color', '#D34836');
+			$("#menu li:eq(3) i").attr('text-color', '#4099FF');
+		
+	},
+
+	function(){
+			$("#menu li:eq(3) i").attr('class', 'fa fa-file fa-2x fa-black');
+			$("#menu li:eq(3)").css('border-color', '#4099FF');
+			$("#menu li:eq(3) i").attr('text-color', 'black');
+	}
+
+	);
+
+	//BLOG COLOR CHANGE
+	$("#menu li:eq(4)").hover(
+	function(){
+			$("#menu li:eq(4) i").attr('class', 'fa fa-paw fa-2x fa-twitter-color');
+			$("#menu li:eq(4)").css('border-color', '#D34836');
+			$("#menu li:eq(4) i").attr('text-color', '#4099FF');
+		
+	},
+
+	function(){
+			$("#menu li:eq(4) i").attr('class', 'fa fa-paw fa-2x fa-black');
+			$("#menu li:eq(4)").css('border-color', '#4099FF');
+			$("#menu li:eq(4) i").attr('text-color', 'black');
+	}
+
+	);
+
+	//CONTACT COLOR CHANGE
+	$("#menu li:eq(5)").hover(
+	function(){
+			$("#menu li:eq(5) i").attr('class', 'fa fa-user fa-2x fa-twitter-color');
+			$("#menu li:eq(5)").css('border-color', '#D34836');
+			$("#menu li:eq(5) i").attr('text-color', '#4099FF');
+		
+	},
+
+	function(){
+			$("#menu li:eq(5) i").attr('class', 'fa fa-user fa-2x fa-black');
+			$("#menu li:eq(5)").css('border-color', '#4099FF');
+			$("#menu li:eq(5) i").attr('text-color', 'black');
+	}
+
+	);
+
+	/*************************************************************************************************/
 	//TWITTER COLOR CHANGE
 	$("#social_id li:eq(0)").hover(
 	function(){
 		if(yPos > 150)
 			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-twitter-color');
 		else
-			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-2x fa-twitter-color');
+			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-1-5x fa-twitter-color');
 	},
 
 	function(){
 		if(yPos > 150)
 			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-black');
 		else
-			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-2x fa-black');
+			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-1-5x fa-black');
 	}
 
 	);
@@ -117,14 +216,14 @@ $(function(){
 		if(yPos > 150)
 			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-facebook-color');
 		else
-			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-2x fa-facebook-color');
+			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-1-5x fa-facebook-color');
 	},
 
 	function(){
 		if(yPos > 150)
 			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-black');
 		else
-			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-2x fa-black');
+			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-1-5x fa-black');
 	}
 
 	);
@@ -135,14 +234,14 @@ $(function(){
 		if(yPos > 150)
 			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-google-plus-color');
 		else
-			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-2x fa-google-plus-color');
+			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-1-5x fa-google-plus-color');
 	},
 
 	function(){
 		if(yPos > 150)
 			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-black');
 		else
-			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-2x fa-black');
+			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-1-5x fa-black');
 	}
 
 	);
@@ -153,50 +252,68 @@ $(function(){
 		if(yPos > 150)
 			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-linkedin-color');
 		else
-			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-2x fa-linkedin-color');
+			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-1-5x fa-linkedin-color');
 	},
 
 	function(){
 		if(yPos > 150)
 			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-black');
 		else
-			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-2x fa-black');
+			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-1-5x fa-black');
+	}
+
+	);
+
+	//YOUTUBE COLOR CHANGE
+	$("#social_id li:eq(4)").hover(
+	function(){
+		if(yPos > 150)
+			$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-youtube-color');
+		else
+			$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-1-5x fa-youtube-color');
+	},
+
+	function(){
+		if(yPos > 150)
+			$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-black');
+		else
+			$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-1-5x fa-black');
 	}
 
 	);
 
 	//GITHUB COLOR CHANGE
-	$("#social_id li:eq(4)").hover(
+	$("#social_id li:eq(5)").hover(
 	function(){
 		if(yPos > 150)
-			$("#social_id li:eq(4) i").attr('class', 'fa fa-github-square fa-github-color');
+			$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-github-color');
 		else
-			$("#social_id li:eq(4) i").attr('class', 'fa fa-github-square fa-2x fa-github-color');
+			$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-1-5x fa-github-color');
 	},
 
 	function(){
 		if(yPos > 150)
-			$("#social_id li:eq(4) i").attr('class', 'fa fa-github-square fa-black');
+			$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-black');
 		else
-			$("#social_id li:eq(4) i").attr('class', 'fa fa-github-square fa-2x fa-black');
+			$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-1-5x fa-black');
 	}
 
 	);
 
 	//TWITCH COLOR CHANGE
-	$("#social_id li:eq(5)").hover(
+	$("#social_id li:eq(6)").hover(
 	function(){
 		if(yPos > 150)
-			$("#social_id li:eq(5) i").attr('class', 'fa fa-twitch fa-twitch-color');
+			$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-twitch-color');
 		else
-			$("#social_id li:eq(5) i").attr('class', 'fa fa-twitch fa-2x fa-twitch-color');
+			$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-1-5x fa-twitch-color');
 	},
 
 	function(){
 		if(yPos > 150)
-			$("#social_id li:eq(5) i").attr('class', 'fa fa-twitch fa-black');
+			$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-black');
 		else
-			$("#social_id li:eq(5) i").attr('class', 'fa fa-twitch fa-2x fa-black');
+			$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-1-5x fa-black');
 	}
 	
 	);

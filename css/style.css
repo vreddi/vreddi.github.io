@@ -26,7 +26,7 @@ body{
 	top: 0px;
 	left: 0px;
 	width:100%;
-	height: 120px;
+	height: 80px;
 	background-image: url("../images/escheresque_ste.png");
         position; absolute;
         z-index: 100;
@@ -43,6 +43,29 @@ body{
 	background: #000000;
 	height: 60px;
 	transition: height 0.3s linear 0s;
+}
+
+#pagetop #menu{
+	float: left;
+	margin-left: 10px;
+	width: auto;
+	margin-top: 4px;
+	margin-bottom: 10px;		
+	padding: 0px;
+	overflow: hidden;
+}
+
+#pagetop #menu li{
+	margin-right: 12px;
+	float: left;
+	padding: 0px;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-top: solid 2px black;
+	border-color: #4099FF;
+	/* No bullet points (again) */
+	list-style: none;
 }
 
 #pagetop #social_id{
