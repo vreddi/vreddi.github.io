@@ -47,7 +47,7 @@ body{
 
 #pagetop #menu{
 	float: left;
-	margin-left: 10px;
+	margin-left: 0px;
 	width: auto;
 	margin-top: 4px;
 	margin-bottom: 10px;		
@@ -56,7 +56,7 @@ body{
 }
 
 #pagetop #menu li{
-	margin-right: 12px;
+	margin-right: 0px;
 	float: left;
 	padding: 0px;
 	padding-top: 3px;
@@ -64,6 +64,7 @@ body{
 	padding-left: 10px;
 	border-top: solid 4px black;
 	border-color: #4099FF;
+
 	/* No bullet points (again) */
 	list-style: none;
 }
