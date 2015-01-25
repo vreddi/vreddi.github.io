@@ -88,105 +88,143 @@ $(function(){
 	$("#thought").append(arr[rand]);
 
 
-
-	//HOME COLOR CHANGE
-	$("#menu li:eq(0)").hover(
+	//MENU COLOR CHANGE
+	$("#side_menu_top").hover(
 	function(){
-			$("#menu li:eq(0) i").attr('class', 'fa fa-home fa-2x fa-twitter-color');
-			$("#menu li:eq(0)").css('border-color', '#D34836');
-			$("#menu li:eq(0) i").attr('text-color', '#4099FF');
+			$("#side_menu_top i").attr('class', 'fa fa-bars fa-1-5x fa-google-plus-color');
+			
 		
 	},
 
 	function(){
-			$("#menu li:eq(0) i").attr('class', 'fa fa-home fa-2x fa-black');
-			$("#menu li:eq(0)").css('border-color', '#4099FF');
-			$("#menu li:eq(0) i").attr('text-color', 'black');
+			$("#side_menu_top i").attr('class', 'fa fa-bars fa-1-5x fa-black');
+	}
+
+	);
+
+	//HOME COLOR CHANGE
+	$("#side_menu #menu li:eq(0)").hover(
+	function(){
+			$("#side_menu #menu li:eq(0) i").attr('class', 'fa fa-home fa-2x fa-twitter-color');
+			$("#side_menu #menu li:eq(0)").css('border-color', '#D34836');
+			$("#side_menu #menu li:eq(0) i").attr('text-color', '#4099FF');
+			$("#side_menu #menu li:eq(0)").css('margin-top', '10px');
+			$("#side_menu #menu li:eq(0)").css('padding-bottom', '30px');
+		
+	},
+
+	function(){
+			$("#side_menu #menu li:eq(0) i").attr('class', 'fa fa-home fa-2x fa-black');
+			$("#side_menu #menu li:eq(0)").css('border-color', '#4099FF');
+			$("#side_menu #menu li:eq(0) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(0)").css('margin-top', '20px');
+			$("#side_menu #menu li:eq(0)").css('padding-bottom', '0px');
 	}
 
 	);
 
 	//EXPERIENCE COLOR CHANGE
-	$("#menu li:eq(1)").hover(
+	$("#side_menu #menu li:eq(1)").hover(
 	function(){
-			$("#menu li:eq(1) i").attr('class', 'fa fa-connectdevelop fa-2x fa-twitter-color');
-			$("#menu li:eq(1)").css('border-color', '#D34836');
+			$("#side_menu #menu li:eq(1) i").attr('class', 'fa fa-connectdevelop fa-2x fa-twitter-color');
+			$("#side_menu #menu li:eq(1)").css('border-color', '#D34836');
 			$("#menu li:eq(1) i").attr('text-color', '#4099FF');
+			$("#side_menu #menu li:eq(1)").css('margin-top', '10px');
+			$("#side_menu #menu li:eq(1)").css('padding-bottom', '30px');
 		
 	},
 
 	function(){
-			$("#menu li:eq(1) i").attr('class', 'fa fa-connectdevelop fa-2x fa-black');
-			$("#menu li:eq(1)").css('border-color', '#4099FF');
-			$("#menu li:eq(1) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(1) i").attr('class', 'fa fa-connectdevelop fa-2x fa-black');
+			$("#side_menu #menu li:eq(1)").css('border-color', '#4099FF');
+			$("#side_menu #menu li:eq(1) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(1)").css('margin-top', '20px');
+			$("#side_menu #menu li:eq(1)").css('padding-bottom', '0px');
+		
 	}
 
 	);
 
 	//HOME COLOR CHANGE
-	$("#menu li:eq(2)").hover(
+	$("#side_menu #menu li:eq(2)").hover(
 	function(){
-			$("#menu li:eq(2) i").attr('class', 'fa fa-code-fork fa-2x fa-twitter-color');
-			$("#menu li:eq(2)").css('border-color', '#D34836');
-			$("#menu li:eq(2) i").attr('text-color', '#4099FF');
+			$("#side_menu #menu li:eq(2) i").attr('class', 'fa fa-code-fork fa-2x fa-twitter-color');
+			$("#side_menu #menu li:eq(2)").css('border-color', '#D34836');
+			$("#side_menu #menu li:eq(2) i").attr('text-color', '#4099FF');
+			$("#side_menu #menu li:eq(2)").css('margin-top', '10px');
+			$("#side_menu #menu li:eq(2)").css('padding-bottom', '30px');
 		
 	},
 
 	function(){
-			$("#menu li:eq(2) i").attr('class', 'fa fa-code-fork fa-2x fa-black');
-			$("#menu li:eq(2)").css('border-color', '#4099FF');
-			$("#menu li:eq(2) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(2) i").attr('class', 'fa fa-code-fork fa-2x fa-black');
+			$("#side_menu #menu li:eq(2)").css('border-color', '#4099FF');
+			$("#side_menu #menu li:eq(2) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(2)").css('margin-top', '20px');
+			$("#side_menu #menu li:eq(2)").css('padding-bottom', '0px');
 	}
 
 	);
 
 	//RESUME COLOR CHANGE
-	$("#menu li:eq(3)").hover(
+	$("#side_menu #menu li:eq(3)").hover(
 	function(){
-			$("#menu li:eq(3) i").attr('class', 'fa fa-file fa-2x fa-twitter-color');
-			$("#menu li:eq(3)").css('border-color', '#D34836');
-			$("#menu li:eq(3) i").attr('text-color', '#4099FF');
+			$("#side_menu #menu li:eq(3) i").attr('class', 'fa fa-file fa-2x fa-twitter-color');
+			$("#side_menu #menu li:eq(3)").css('border-color', '#D34836');
+			$("#side_menu #menu li:eq(3) i").attr('text-color', '#4099FF');
+			$("#side_menu #menu li:eq(3)").css('margin-top', '10px');
+			$("#side_menu #menu li:eq(3)").css('padding-bottom', '30px');
 		
 	},
 
 	function(){
-			$("#menu li:eq(3) i").attr('class', 'fa fa-file fa-2x fa-black');
-			$("#menu li:eq(3)").css('border-color', '#4099FF');
-			$("#menu li:eq(3) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(3) i").attr('class', 'fa fa-file fa-2x fa-black');
+			$("#side_menu #menu li:eq(3)").css('border-color', '#4099FF');
+			$("#side_menu #menu li:eq(3) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(3)").css('margin-top', '20px');
+			$("#side_menu #menu li:eq(3)").css('padding-bottom', '0px');
 	}
 
 	);
 
 	//BLOG COLOR CHANGE
-	$("#menu li:eq(4)").hover(
+	$("#side_menu #menu li:eq(4)").hover(
 	function(){
-			$("#menu li:eq(4) i").attr('class', 'fa fa-paw fa-2x fa-twitter-color');
-			$("#menu li:eq(4)").css('border-color', '#D34836');
-			$("#menu li:eq(4) i").attr('text-color', '#4099FF');
+			$("#side_menu #menu li:eq(4) i").attr('class', 'fa fa-paw fa-2x fa-twitter-color');
+			$("#side_menu #menu li:eq(4)").css('border-color', '#D34836');
+			$("#side_menu #menu li:eq(4) i").attr('text-color', '#4099FF');
+			$("#side_menu #menu li:eq(4)").css('margin-top', '10px');
+			$("#side_menu #menu li:eq(4)").css('padding-bottom', '30px');
 		
 	},
 
 	function(){
-			$("#menu li:eq(4) i").attr('class', 'fa fa-paw fa-2x fa-black');
-			$("#menu li:eq(4)").css('border-color', '#4099FF');
-			$("#menu li:eq(4) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(4) i").attr('class', 'fa fa-paw fa-2x fa-black');
+			$("#side_menu #menu li:eq(4)").css('border-color', '#4099FF');
+			$("#side_menu #menu li:eq(4) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(4)").css('margin-top', '20px');
+			$("#side_menu #menu li:eq(4)").css('padding-bottom', '0px');
 	}
 
 	);
 
 	//CONTACT COLOR CHANGE
-	$("#menu li:eq(5)").hover(
+	$("#side_menu #menu li:eq(5)").hover(
 	function(){
-			$("#menu li:eq(5) i").attr('class', 'fa fa-user fa-2x fa-twitter-color');
-			$("#menu li:eq(5)").css('border-color', '#D34836');
-			$("#menu li:eq(5) i").attr('text-color', '#4099FF');
+			$("#side_menu #menu li:eq(5) i").attr('class', 'fa fa-user fa-2x fa-twitter-color');
+			$("#side_menu #menu li:eq(5)").css('border-color', '#D34836');
+			$("#side_menu #menu li:eq(5) i").attr('text-color', '#4099FF');
+			$("#side_menu #menu li:eq(5)").css('margin-top', '10px');
+			$("#side_menu #menu li:eq(5))").css('padding-bottom', '30px');
 		
 	},
 
 	function(){
-			$("#menu li:eq(5) i").attr('class', 'fa fa-user fa-2x fa-black');
-			$("#menu li:eq(5)").css('border-color', '#4099FF');
-			$("#menu li:eq(5) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(5) i").attr('class', 'fa fa-user fa-2x fa-black');
+			$("#side_menu #menu li:eq(5)").css('border-color', '#4099FF');
+			$("#side_menu #menu li:eq(5) i").attr('text-color', 'black');
+			$("#side_menu #menu li:eq(5)").css('margin-top', '20px');
+			$("#side_menu #menu li:eq(5)").css('padding-bottom', '0px');
 	}
 
 	);
@@ -317,6 +355,39 @@ $(function(){
 	}
 	
 	);
+
+
+	/*****************************SIDE MENU SLIDE-DOWN PART***************************************/
+
+	var side_menu = $('#side_menu');
+
+		side_menu.hide();
+
+		//dd.filter(':nth-child(n+4)').addClass('hide');
+
+
+		//Earlier the Event listner was like:
+		//$('dt').on('mouseenter', function(){})();
+		//But if we have a lot of 'dt's then the event listener will be called
+		//a lot of times which is not good performance-wise. Therefore we added a new
+		//second parameter which basically says that the event listner would work for the 
+		//parent (dl) only if the 'mouseenter' is on 'some' particular child ONLY. In this
+		//case it is dt.
+
+
+		$('#side_menu_top').on('click', function(){
+			
+			if ( $(side_menu).is( ":hidden" ) ) {
+				$(side_menu)
+						.slideDown(200);
+			}
+			else{
+				$(side_menu)
+						.slideUp(200);
+			}
+			
+
+		});
 
 })();
 
