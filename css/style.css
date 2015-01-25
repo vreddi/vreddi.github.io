@@ -122,17 +122,39 @@ body{
 	list-style: none;
 }
 
+#welcome{
+	font-family: 'Ubuntu', serif;
+    font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+
 #homepage_content{
 	padding-top: 50px;
 	margin-top: 140px;
-	width: 100%;
-	height: 100%;
 	text-align: center;
 	font-family: 'Ubuntu', serif;
 	font-size: 28px;
     text-decoration: none;
 	color: black;
 }
+
+ #left-container{
+	display: block-inline;
+	position: relative;
+	margin-top: 0px;
+	margin-left: 10px;
+	float: left;
+	width: 64%;
+ }
+
+ #right-container{
+ 	display: block-inline;
+ 	margin-right: 10px;
+	position: relative;
+	width: 30%;
+	float: right;
+	margin-top: 0px;
+ }
 
 /*Class Grow*/
 .grow {
