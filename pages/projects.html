@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Vishrut Reddi</title>
+		<!-- Linking the CSS file -->
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+		<!--Favicon-->
+		<link rel="shortcut icon" href="http://i176.photobucket.com/albums/w171/Bolaeisk/DarthVader2.png" type="image/x-icon">
+
+		<!-- Need dem fonts! -->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+
+		<script type="text/javascript" src="../js/header_title.js">
+	
+		</script>
+
+	</head>
+	
+	<body>
+	<div id="header">
+		<ul id="header_menu">
+		
+			<!-- HOME BUTTON -->
+			<li>
+				<a href="../index.html" class="BUTTON">HOME</a>
+			</li>
+		
+			<li>
+				<a href="experience.html" class="BUTTON">EXPERIENCE</a>
+			</li>
+		
+			<li>
+				<a href="projects.html" class="BUTTON">PROJECTS</a>
+			</li>
+
+			<li>
+				<a href="blog.html" class="BUTTON">BLOG</a>
+			</li>
+		
+			<li>
+				<a href="resume.html" class="BUTTON">RESUME</a>
+			</li>
+
+			<li>
+				<a href="music.html" class="BUTTON">MUSIC</a>
+			</li>
+		
+			<li>
+				<a href="contact.html" class="BUTTON">CONTACT</a>
+			</li>
+		
+		
+	
+		</ul>
+	
+		<ul id="social_id">
+				<!-- TWITTER -->
+				<li>
+					<a href="https://www.twitter.com/vishrutreddi"><img src="../images/social_icons/twitter_icon.png"></a>
+				</li>
+			
+				<!-- FACEBOOK -->
+				<li>
+					<a href="https://www.facebook.com/vishrutreddi"><img src="../images/social_icons/facebook_icon.png"></a>
+				</li>
+			
+				<!-- GOOGLE+ -->
+				<li>
+					<a href="https://plus.google.com/u/0/+VishrutReddi/posts"><img src="../images/social_icons/google+_icon.png"></a>
+				</li>
+			
+				<!-- LINKEDIN	 -->
+				<li>
+					<a href="https://www.linkedin.com/in/vishrutreddi"><img src="../images/social_icons/linkedin_icon.png"></a>
+				</li>
+			
+				<!-- GITHUB -->
+				<li>
+					<a href="https://github.com/vreddi"><img src="../images/social_icons/github_icon.png"></a>
+				</li>
+			</ul>
+
+		
+	</div>
+	
+
+	<div id="top_shadow">
+	</div>
+	<div id="bottom_shadow">
+	</div>
+
+	<div id="header_slider">
+		<img src="http://i1197.photobucket.com/albums/aa426/Jastner/Projects_header.png">
+	</div>
+	
+
+	<!--Undergrad Research CS 499-->
+	<div id="contentBorder">
+		<div class="pageContentHeader">
+			<a href="http://scholar.google.com/"><img src="http://i1197.photobucket.com/albums/aa426/Jastner/Google_Scholar_logo.png" style="height: 75px; width: auto;"> Project Oriented Research</a><br>
+		</div>
+		<div class="subContent">CS 499, UIUC | December 2014 - Present | Champaign, Illinois, USA</div>
+		<div class="pageContent">
+			<p>
+				
+
+			</p>
+			
+		</div>
+	</div>
+
+
+	<!--Interactive Graphics CS 418-->
+	<div id="contentBorder">
+		<div class="pageContentHeader">
+			<a href="http://graphics.cs.illinois.edu/cs418/fa14"><img src="http://i1197.photobucket.com/albums/aa426/Jastner/UIUC_logo.png" style="height: 75px; width: auto;"> Interactive Computer Graphics</a><br>
+		</div>
+		<div class="subContent">CS 418, UIUC | August 2014 - December 2014 | Champaign, Illinois, USA</div>
+		<div class="pageContent">
+			<p>
+				These Projects was done for my Graphics class at the University of Illinois at Urbana Champaign. Each realtes to some underlying concepts in Graphics: <br><br>
+
+				<b><u>Project 1 : Dancing 'I'</u></b><br>
+				A 2-D animation of a dancing capital letter I, which includes modeling, rendering and animation. Source creates an App with an interactive functionality for the user. The animation part of the functionality effectively makes the model 'I' dance, henceforth 'Dancing - I'. The model is a 10 Triangle model built with triangle fans effectively reducing the number of calls made to glVertex.<br><br>
+
+				<b><u>Project 2: Flight Simulator</u></b><br>
+				Idea behind the project is to manipulate the camera to roam about the world visually duplicating the flight's cockpit view.This is a simple Flight Simulator App which provides basic interactive flight controls to the users. The only view available is the cockpit view. The aircraft can perform rolls, pitching and yaws. The aircraft translates/moves at a constant speed which cannot be changed (In the current design of the App). With the project a Camera class with a 3 coordinate system Vector and Point class with all its functionalities has been implemented.<br><br>
+
+				<b><u>Project 3: Would You Like Some Tea Sir?</u></b><br>
+				Created a mesh-loader for this project to load the 3D teapot object from the .OBJ file. This project included perspective, hidden surfaces (via the z-buffer), texture mapping and environment mapping. Lighting was also implemented within the application to show off the reflective surface of the teapot. The reflection was created with normal vector generation for every face in the model. In the end with all the configurable mappings for the model a simple rotating (about multiple axes) animation was provided. I also used the Camera class that I built from the previous project to fit in this project for more user functionality. Now with the Camera class the user could see the teapot from different perspective/views.<br><br>
+
+				<b><u>Project 4: Subdivision Surfaces</u></b><br>
+				This project was all about implementing the Catmull Clark Algorithm for subdividing surfaces to produce smooth corners efficiently. For the algorithm an Half Edge Data structure was implemented. Information about the edges, points and faces were stored at each subdivision in a Vector. The model used for the application was a self constructed 3D model of the letter 'I' made out of quads. With a press of a button the user could trigger to go to the next subdivision level where a face point is added to each face and each face is divided into 4 more new faces keeping information about its neighbors. All of these subdivisions involve correct calculations of their face points and edge points along with storing all the neccesary information to move to the next subdivision. Visually when the corners of the model smooth out the 'I' kinda moves on to look like a bone. Along with all this the user has the ability to toggle between mesh-view and filled-view. The User can also change color of the model with 4 - toggle switch. Lighting and texture mapping is also implemented and for the animation the model moves along a Bezier Curve whose animation speed is also configurable by the user.<br><br>
+
+			</p>
+			<a href="https://github.com/vreddi/Interactive-Computer-Graphics--CS-418-" target="_blank"><button id="git_btn" class = "icons"></button> </a>
+			<a href="https://www.youtube.com/playlist?list=PLkwl5z_SV78-hfAO-hRUkopMC5o-SJ-en" target="_blank"><button id="youtube_btn" class = "icons"></button> </a>
+		</div>
+	</div>
+
+	<!--Developing an OS ECE 391-->
+	<div id="contentBorder">
+		<div class="pageContentHeader">
+			<a href="https://courses.engr.illinois.edu/ece391/"><img src="http://i1197.photobucket.com/albums/aa426/Jastner/UIUC_logo.png" style="height: 75px; width: auto;"> Developing an Operating System</a><br>
+		</div>
+		<div class="subContent">ECE 391, UIUC | January 2014 - May 2014 | Champaign, Illinois, USA</div>
+		<div class="pageContent">
+			<p>
+				This project was for the Computer Systems Class (ECE 391). The course introduced us to the concepts and abstractions central to the development of modern computing systems, with an emphasis on the systems software that controls interaction between devices and other hardware and application programs. We covered input-output semantics, synchronization, interrupts, multitasking, virtualization of resources, protection, and resource management concepts. We were also introduced to network and storage device abstractions. In terms of practical skills, we were exposed to software development tools for source control, debugging, dependency management, and compilation, and were also focused in the context of a real operating system executing in a virtual machine. We also developed software analysis skills as well as team-based development and testing skills.<br><br>
+
+				The list of topics includes:
+				<ul>
+					<li> x86 assembly: review of basic constructs and structures, interfacing C to assembly, macros, stack frame and calling convention</li>
+					
+					<li>system software basics: resource management, virtualization, protection, system call interface, asynchronous and synchronous interactions</li>
+					
+					<li>simple data structures: queues, heaps, stacks, lists</li>
+				
+					<li>interrupts and exceptions: controlling generation and handling, chaining, cleanup code, interactions with device functionality, interrupt controllers</li>
+
+					<li>synchronization: primitives, memory semantics, mutual exclusion, semaphores, scheduling, race conditions</li>
+
+					<li>virtualization of the CPU: processes and scheduling</li>
+
+					<li>I/O interface: file descriptors, buffering, control operations</li>
+
+					<li>device programming: basic abstractions, character and block devices, device driver development process</li>
+
+					<li>user-level programming interfaces for file and network I/O, relationship to kernel I/O abstractions</li>
+
+					<li>virtualization of memory: hardware support and software abstractions</li>
+
+					<li>signals: semantics, generation, and delivery</li>
+
+					<li>file system abstractions and disk layout</li>
+				</ul>
+			</p>
+			
+		</div>
+	</div>
+
+	<!-- Line Following Robot -->
+	<div id="contentBorder">
+		<div class="pageContentHeader">
+			<a href="http://courses.engr.illinois.edu/ece110/Lab/page2/page2.html"><img src="http://i1197.photobucket.com/albums/aa426/Jastner/UIUC_logo.png" style="height: 75px; width: auto;">Line Following Robot</a><br>
+		</div>
+		<div class="subContent">ECE 110, UIUC| August 2013 - December 2013 | Champaign, Illinois, USA</div>
+		<div class="pageContent">
+			<p>
+				To tie the concepts of logic gates, transistors, PWM (Pulse Width Modulator) and basic circuitry together and with the expertise gained in the labs we designed a circuit that guides a vehicle along a white piece of tape on a black table - a line-following robot. There were, of course, many difficulties to challenge us - all kinds of turns from gentle curves to 90 degree turns, zig-zags,stopping functionality,color detection and Y-splits. This lab that included the Final design challenge was very enjoyable for me and my lab partner and we saw how our circuitry and theoretical ideas translated in the practical effective motion of the vehicle. <br><br>
+
+				The purpose of this design project is to make a battery powered car follow a taped track on the table. This task is achieved by circuiting a proto board connected to a certain amount of sensors that can detect the tape. The car has to conquer a tape track that consists of zig-zags, curves, right-angle turns, and splits that require a detection of color so that the car chooses the right path. Therefore the task is to try to circuit the board to conquer all the characteristics of the track in one go. <br><br>
+
+				The building of the autonomous vehicle taught us a lot of things. The things that look complicated in functioning may not be that complicated under the hood. The circuitry for our vehicle was very basic yet it completed the track. We also thought about this work used in an industrial environment where such vehicles with more features are used in factories in moving stuff from one area to another autonomously.
+
+			</p>
+			
+		</div>
+	</div>
+
+	<br>
+	<img src="http://i1197.photobucket.com/albums/aa426/Jastner/white-wall.jpg" style="width: 100%; height: 100px;">
+	<br>
+
+	<div id="footer">
+		&copy Copyright 2015 Vishrut Reddi <br>
+		Portfolio
+	</div>
+
+	
+	</body>
+</html>
+

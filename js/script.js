@@ -1,53 +1,9 @@
-var pagetop, menu, yPos;
-
 /*
-Name: yScroll()
-Description: Handles the thought_menu bar to go away and reduction of size of the
-			 pagetop depending on the scroll-bar's position.
+This JS file is used for the 'home page'.
+The 'other pages' like experience page, contact page, resume page,
+is governed by header_title.js and not this file even though some functions
+are repeated in both of the files.
 */
-function yScroll(){
-	pagetop = document.getElementById('pagetop');
-	menu = document.getElementById('thought_menu');
-	yPos = window.pageYOffset;
-	
-	if(yPos > 150){
-	
-			pagetop.style.height = "40px";
-			pagetop.style.paddingTop = "8px";
-			pagetop.style.paddingBottom = "8px";
-			menu.style.height = "0px";
-
-
-			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-black');
-			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-black');
-			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-black');
-			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-black');
-			$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-black');
-			$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-black');
-			$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-black');
-	} 
-
-	else {
-		
-		pagetop.style.height = "80px";
-		pagetop.style.paddingTop = "8px";
-		pagetop.style.paddingBottom = "50px";
-		menu.style.height = "60px";
-
-
-		$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-1-5x fa-black');
-		$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-1-5x fa-black');
-		$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-1-5x fa-black');
-		$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-1-5x fa-black');
-		$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-1-5x fa-black');
-		$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-1-5x fa-black');
-		$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-1-5x fa-black');
-	}
-		
-}
-		
-window.addEventListener("scroll", yScroll);
-
 
 var isShowing = true;
 var i1 = 0;
@@ -78,318 +34,145 @@ var arr = new Array();
 			arr[6] = '"Those who cannot remember the past are doomed to repeat it."<br><div style="font-size: 12px">- George Santayana</div>';
 
 $(function(){
-
-	yPos = window.pageYOffset;
-
 	var size = arr.length;
 	//0 -> min value
 	//size - 1 -> max value
 	var rand = Math.floor(Math.random() * ((size - 1) - 0 + 1)) + 0;;
-	$("#thought").append(arr[rand]);
+	$("#header-quote").append(arr[rand]);
 
-
-	//MENU COLOR CHANGE
-	$("#side_menu_top").hover(
-	function(){
-			$("#side_menu_top i").attr('class', 'fa fa-bars fa-1-5x fa-google-plus-color');
-			
 		
-	},
+//Used to Show the footer when the scroll reaches the bottom of the page
+$(window).scroll(function() {
+    if ($(window).scrollTop() + $(window).height() === $(document).height()) {
+        isShowing = true;
+        footer.style.display = "block";
+        bottom_shadow.style.display = "block";
 
-	function(){
-			$("#side_menu_top i").attr('class', 'fa fa-bars fa-1-5x fa-black');
-	}
+    } 
 
-	);
-
-	//HOME COLOR CHANGE
-	$("#side_menu #menu li:eq(0)").hover(
-	function(){
-			$("#side_menu #menu li:eq(0) i").attr('class', 'fa fa-home fa-2x fa-twitter-color');
-			$("#side_menu #menu li:eq(0)").css('border-color', '#D34836');
-			$("#side_menu #menu li:eq(0) i").attr('text-color', '#4099FF');
-			$("#side_menu #menu li:eq(0)").css('margin-top', '10px');
-			$("#side_menu #menu li:eq(0)").css('padding-bottom', '30px');
-		
-	},
-
-	function(){
-			$("#side_menu #menu li:eq(0) i").attr('class', 'fa fa-home fa-2x fa-black');
-			$("#side_menu #menu li:eq(0)").css('border-color', '#4099FF');
-			$("#side_menu #menu li:eq(0) i").attr('text-color', 'black');
-			$("#side_menu #menu li:eq(0)").css('margin-top', '20px');
-			$("#side_menu #menu li:eq(0)").css('padding-bottom', '0px');
-	}
-
-	);
-
-	//EXPERIENCE COLOR CHANGE
-	$("#side_menu #menu li:eq(1)").hover(
-	function(){
-			$("#side_menu #menu li:eq(1) i").attr('class', 'fa fa-connectdevelop fa-2x fa-twitter-color');
-			$("#side_menu #menu li:eq(1)").css('border-color', '#D34836');
-			$("#menu li:eq(1) i").attr('text-color', '#4099FF');
-			$("#side_menu #menu li:eq(1)").css('margin-top', '10px');
-			$("#side_menu #menu li:eq(1)").css('padding-bottom', '30px');
-		
-	},
-
-	function(){
-			$("#side_menu #menu li:eq(1) i").attr('class', 'fa fa-connectdevelop fa-2x fa-black');
-			$("#side_menu #menu li:eq(1)").css('border-color', '#4099FF');
-			$("#side_menu #menu li:eq(1) i").attr('text-color', 'black');
-			$("#side_menu #menu li:eq(1)").css('margin-top', '20px');
-			$("#side_menu #menu li:eq(1)").css('padding-bottom', '0px');
-		
-	}
-
-	);
-
-	//HOME COLOR CHANGE
-	$("#side_menu #menu li:eq(2)").hover(
-	function(){
-			$("#side_menu #menu li:eq(2) i").attr('class', 'fa fa-code-fork fa-2x fa-twitter-color');
-			$("#side_menu #menu li:eq(2)").css('border-color', '#D34836');
-			$("#side_menu #menu li:eq(2) i").attr('text-color', '#4099FF');
-			$("#side_menu #menu li:eq(2)").css('margin-top', '10px');
-			$("#side_menu #menu li:eq(2)").css('padding-bottom', '30px');
-		
-	},
-
-	function(){
-			$("#side_menu #menu li:eq(2) i").attr('class', 'fa fa-code-fork fa-2x fa-black');
-			$("#side_menu #menu li:eq(2)").css('border-color', '#4099FF');
-			$("#side_menu #menu li:eq(2) i").attr('text-color', 'black');
-			$("#side_menu #menu li:eq(2)").css('margin-top', '20px');
-			$("#side_menu #menu li:eq(2)").css('padding-bottom', '0px');
-	}
-
-	);
-
-	//RESUME COLOR CHANGE
-	$("#side_menu #menu li:eq(3)").hover(
-	function(){
-			$("#side_menu #menu li:eq(3) i").attr('class', 'fa fa-file fa-2x fa-twitter-color');
-			$("#side_menu #menu li:eq(3)").css('border-color', '#D34836');
-			$("#side_menu #menu li:eq(3) i").attr('text-color', '#4099FF');
-			$("#side_menu #menu li:eq(3)").css('margin-top', '10px');
-			$("#side_menu #menu li:eq(3)").css('padding-bottom', '30px');
-		
-	},
-
-	function(){
-			$("#side_menu #menu li:eq(3) i").attr('class', 'fa fa-file fa-2x fa-black');
-			$("#side_menu #menu li:eq(3)").css('border-color', '#4099FF');
-			$("#side_menu #menu li:eq(3) i").attr('text-color', 'black');
-			$("#side_menu #menu li:eq(3)").css('margin-top', '20px');
-			$("#side_menu #menu li:eq(3)").css('padding-bottom', '0px');
-	}
-
-	);
-
-	//BLOG COLOR CHANGE
-	$("#side_menu #menu li:eq(4)").hover(
-	function(){
-			$("#side_menu #menu li:eq(4) i").attr('class', 'fa fa-paw fa-2x fa-twitter-color');
-			$("#side_menu #menu li:eq(4)").css('border-color', '#D34836');
-			$("#side_menu #menu li:eq(4) i").attr('text-color', '#4099FF');
-			$("#side_menu #menu li:eq(4)").css('margin-top', '10px');
-			$("#side_menu #menu li:eq(4)").css('padding-bottom', '30px');
-		
-	},
-
-	function(){
-			$("#side_menu #menu li:eq(4) i").attr('class', 'fa fa-paw fa-2x fa-black');
-			$("#side_menu #menu li:eq(4)").css('border-color', '#4099FF');
-			$("#side_menu #menu li:eq(4) i").attr('text-color', 'black');
-			$("#side_menu #menu li:eq(4)").css('margin-top', '20px');
-			$("#side_menu #menu li:eq(4)").css('padding-bottom', '0px');
-	}
-
-	);
-
-	//CONTACT COLOR CHANGE
-	$("#side_menu #menu li:eq(5)").hover(
-	function(){
-			$("#side_menu #menu li:eq(5) i").attr('class', 'fa fa-user fa-2x fa-twitter-color');
-			$("#side_menu #menu li:eq(5)").css('border-color', '#D34836');
-			$("#side_menu #menu li:eq(5) i").attr('text-color', '#4099FF');
-			$("#side_menu #menu li:eq(5)").css('margin-top', '10px');
-			$("#side_menu #menu li:eq(5))").css('padding-bottom', '30px');
-		
-	},
-
-	function(){
-			$("#side_menu #menu li:eq(5) i").attr('class', 'fa fa-user fa-2x fa-black');
-			$("#side_menu #menu li:eq(5)").css('border-color', '#4099FF');
-			$("#side_menu #menu li:eq(5) i").attr('text-color', 'black');
-			$("#side_menu #menu li:eq(5)").css('margin-top', '20px');
-			$("#side_menu #menu li:eq(5)").css('padding-bottom', '0px');
-	}
-
-	);
-
-	/*************************************************************************************************/
-	//TWITTER COLOR CHANGE
-	$("#social_id li:eq(0)").hover(
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-twitter-color');
-		else
-			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-1-5x fa-twitter-color');
-	},
-
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-black');
-		else
-			$("#social_id li:eq(0) i").attr('class', 'fa fa-twitter-square fa-1-5x fa-black');
-	}
-
-	);
-
-	//FACEBOOK COLOR CHANGE
-	$("#social_id li:eq(1)").hover(
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-facebook-color');
-		else
-			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-1-5x fa-facebook-color');
-	},
-
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-black');
-		else
-			$("#social_id li:eq(1) i").attr('class', 'fa fa-facebook-square fa-1-5x fa-black');
-	}
-
-	);
-
-	//GOOGLE+ COLOR CHANGE
-	$("#social_id li:eq(2)").hover(
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-google-plus-color');
-		else
-			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-1-5x fa-google-plus-color');
-	},
-
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-black');
-		else
-			$("#social_id li:eq(2) i").attr('class', 'fa fa-google-plus-square fa-1-5x fa-black');
-	}
-
-	);
-
-	//LINKEDIN COLOR CHANGE
-	$("#social_id li:eq(3)").hover(
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-linkedin-color');
-		else
-			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-1-5x fa-linkedin-color');
-	},
-
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-black');
-		else
-			$("#social_id li:eq(3) i").attr('class', 'fa fa-linkedin-square fa-1-5x fa-black');
-	}
-
-	);
-
-	//YOUTUBE COLOR CHANGE
-	$("#social_id li:eq(4)").hover(
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-youtube-color');
-		else
-			$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-1-5x fa-youtube-color');
-	},
-
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-black');
-		else
-			$("#social_id li:eq(4) i").attr('class', 'fa fa-youtube-play fa-1-5x fa-black');
-	}
-
-	);
-
-	//GITHUB COLOR CHANGE
-	$("#social_id li:eq(5)").hover(
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-github-color');
-		else
-			$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-1-5x fa-github-color');
-	},
-
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-black');
-		else
-			$("#social_id li:eq(5) i").attr('class', 'fa fa-github-square fa-1-5x fa-black');
-	}
-
-	);
-
-	//TWITCH COLOR CHANGE
-	$("#social_id li:eq(6)").hover(
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-twitch-color');
-		else
-			$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-1-5x fa-twitch-color');
-	},
-
-	function(){
-		if(yPos > 150)
-			$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-black');
-		else
-			$("#social_id li:eq(6) i").attr('class', 'fa fa-twitch fa-1-5x fa-black');
-	}
-	
-	);
-
-
-	/*****************************SIDE MENU SLIDE-DOWN PART***************************************/
-
-	var side_menu = $('#side_menu');
-
-		side_menu.hide();
-
-		//dd.filter(':nth-child(n+4)').addClass('hide');
-
-
-		//Earlier the Event listner was like:
-		//$('dt').on('mouseenter', function(){})();
-		//But if we have a lot of 'dt's then the event listener will be called
-		//a lot of times which is not good performance-wise. Therefore we added a new
-		//second parameter which basically says that the event listner would work for the 
-		//parent (dl) only if the 'mouseenter' is on 'some' particular child ONLY. In this
-		//case it is dt.
-
-
-		$('#side_menu_top').on('click', function(){
-			
-			if ( $(side_menu).is( ":hidden" ) ) {
-				$(side_menu)
-						.slideDown(200);
-			}
-			else{
-				$(side_menu)
-						.slideUp(200);
-			}
-			
-
-		});
+    else if (isShowing === true && $(window).scrollTop() + $(window).height() <= $(document).height() * 0.9) {
+        isShowing = false;
+        footer.style.display = "none";
+  		bottom_shadow.style.display = "none";
+    }
+}); 
 
 })();
+/*
+//Changes circular_images every 4s
+setInterval(function(){
+	
+	if(i1 == 0)
+	{
+		$('#circular_image1').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/dp.png)");
+		circular_image1.style.backgroundPosition = "-50px 0px";
+		circular_image1.style.backgroundSize = "150%";
+		i1++;
+	}
+
+	else if(i1 == 1)
+	{
+		$('#circular_image1').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/childhood.jpg)");
+		circular_image1.style.backgroundPosition = "-250px -200px";
+		circular_image1.style.backgroundSize = "300%";
+		i1++;
+
+	}
+
+	else if(i1 == 2)
+	{
+		$('#circular_image1').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/karate.jpg)");
+		circular_image1.style.backgroundPosition = "-250px -150px";
+		circular_image1.style.backgroundSize = "300%";
+		i1++;
+
+	}
+	
+	else
+	{
+		$('#circular_image1').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/jam_night.jpg)");
+		circular_image1.style.backgroundPosition = "0px -45px";
+	    circular_image1.style.backgroundSize = "120%";
+		i1 = 0;
+	}
+
+}, 4000);
 
 
+//Changes circular_images every 4s
+setInterval(function(){
+	
+	if(i2 == 0)
+	{
+		$('#circular_image2').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/OrientationICAS.jpg)");
+		circular_image2.style.backgroundPosition = "-200px 0px";
+		circular_image2.style.backgroundSize = "300%";
+		i2++;
+	}
 
+	else if(i2 == 1)
+	{
+		$('#circular_image2').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/friends.jpg)");
+		circular_image2.style.backgroundPosition = "0px 0px";
+		circular_image2.style.backgroundSize = "200%";
+		i2++;
+
+	}
+
+	else if(i2 == 2)
+	{
+		$('#circular_image2').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/AnnualDayICAS2.jpg)");
+		circular_image2.style.backgroundPosition = "-50px -100px";
+		circular_image2.style.backgroundSize = "300%";
+		i2++;
+
+	}
+	
+	else
+	{
+		$('#circular_image2').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/Holi.jpg)");
+		circular_image2.style.backgroundPosition = "-450px -200px";
+	    circular_image2.style.backgroundSize = "400%";
+		i2 = 0;
+	}
+
+}, 4000);
+
+
+//Changes circular_images every 4s
+setInterval(function(){
+	
+	if(i3 == 0)
+	{
+		$('#circular_image3').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/Orientationperformance.jpg)");
+		circular_image3.style.backgroundPosition = "-800px -150px";
+		circular_image3.style.backgroundSize = "500%";
+		i3++;
+	}
+
+	else if(i3 == 1)
+	{
+		$('#circular_image3').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/ModernSchoolConcert.jpg)");
+		circular_image3.style.backgroundPosition = "-280px -170px";
+		circular_image3.style.backgroundSize = "500%";
+		i3++;
+	}
+
+	else if(i3 == 2)
+	{
+		$('#circular_image3').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/AnnualDayICAS.jpg)");
+		circular_image3.style.backgroundPosition = "-200px -20px";
+		circular_image3.style.backgroundSize = "300%";
+		i3++;
+
+	}
+	
+	else
+	{
+		$('#circular_image3').css("background","url(http://i1197.photobucket.com/albums/aa426/Jastner/paintball.jpg)");
+		circular_image3.style.backgroundPosition = "-430px -100px";
+	    circular_image3.style.backgroundSize = "450%";
+		i3 = 0;
+	}
+
+}, 4000);*/
