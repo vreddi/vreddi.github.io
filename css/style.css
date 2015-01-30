@@ -1,338 +1,51 @@
-html
-{
+html{
+	width: 100%;
 	height: 100%;
 }
 
 body{
-	background-image: url("../images/tweed.png");	
-	height: 100%;
-}
-
-.icons{
-	background: url(../images/icons.jpg);
-	width: 47px;
-	height: 47px;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	margin: 10px;
-}
-
-#git_btn{
-	background-position: 263px 198px;
-}
-
-#youtube_btn{
-	background-position: 142px 78px;
-}
-
-#demo_btn{
-	background-position: 264px 258px; 
-}
-
-#top_shadow{
-	position: fixed;
-	top: 0px;
-	margin: 0;
-	padding: 0;
-	left: 0;		
-	right : 0;
-	width: 100%;
-	height: 175px;	
-	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-}
-
-#bottom_shadow{
-	position: fixed;
-	display: none;
-	bottom: 0px;
-	margin: 0;
-	padding: 0;
-	left: 0;		
-	right : 0;
-	width: 100%;
-	height: 175px;	
-	background: -moz-linear-gradient(bottom, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
-	background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: -o-linear-gradient(bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: -ms-linear-gradient(bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	
-	
-}
-
-#header-quote{
-	margin-top: 100px;
-	display: block-inline;
-	position: relative;
-	width: 100%;
+	background-image: url("../images/nice_snow.png");
+	height = 100%;
 	text-align: center;
-	font-family: 'Ubuntu', serif;
-    font-size: 22px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
 }
 
- #left-container{
-	display: block-inline;
-	position: relative;
-	margin-top: -100px;
-	margin-left: 10px;
-	float: left;
-	width: 67%;
- }
-
- #right-container{
- 	display: block-inline;
- 	margin-right: 10px;
-	position: relative;
-	width: 30%;
-	float: right;
-	margin-top: 100px;
- }
-
-#contentBorder{
-	display: block;
-	position: relative;
-	margin-top: 10px;
-	background-color: rgba(0, 0, 0, 0.1);
-	border: solid 1px black;
-}
-
-.pageContentHeader{
-	display: inline-block;
+.ubuntu_font{
 	font-family: 'Ubuntu', serif;
-    font-size: 28px;
+	font-size: 28px;
     text-decoration: none;
-	color: black;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-a:link{
-	color: black;
-	text-decoration: none;
-}
-a:visited{
-	color: black;
-	text-decoration: none;
-}
-a:hover{
-	color: black;
-	text-decoration: none;
-}
-a:active{
-	color: black;
-	text-decoration: none;
-}
-
-
-.subContent{
-	font-family: "Times New Roman", Times, serif;
-    font-size: 18px;
-	color: rgba(92,92,92,1);
-}
-
-.pageContent{
-
-	margin-left: 5%;
-	margin-top: 5px;
-	font-family: 'Ubuntu', serif;
-    font-size: 14px;
-	color: rgba(0,0,0,1);
-}
-
-#header_slider {
-	margin-top: 10px;
-	margin-left: 100%;
-
-	-webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-
-}
-
-#header_slidercr {
-	margin-top: 30px;
-	margin-left: 100%;
-
-	-webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-
-}
-
-.content{
-	font-family: 'Ubuntu', serif;
-    font-size: 48px;
-	margin-top: 200px;
-	text-align: center;
-	color: rgba(0,0,0,1);
-}
-
-#circular_image1{
-	display: inline-block;
- 	width: 250px;
- 	height: 250px;
- 	background: url('http://i1197.photobucket.com/albums/aa426/Jastner/dp.png');
- 	background-repeat: no-repeat;
- 	background-attachment: scroll;
- 	background-position: -50px 0px; 
- 	background-size: 150%;
- 	border-radius: 50%;
-
- 	-webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-
-}
-
-#circular_image2{
- 	width: 250px;
- 	height: 250px;
- 	display: inline-block;
- 	background: url('http://i1197.photobucket.com/albums/aa426/Jastner/OrientationICAS.jpg');
- 	background-repeat: no-repeat;
- 	background-attachment: scroll;
- 	background-position: -200px 0px; 
- 	background-size: 300%;
- 	border-radius: 50%;
-
- 	-webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-
-}
-
-#circular_image3{
- 	width: 250px;
- 	height: 250px;
- 	display: inline-block;
- 	background: url('http://i1197.photobucket.com/albums/aa426/Jastner/Orientationperformance.jpg');
- 	background-repeat: no-repeat;
- 	background-attachment: scroll;
- 	background-position: -800px -150px; 
- 	background-size: 500%;
- 	border-radius: 50%;
-
- 	-webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-
-
-}
-
-
-#footer {
-	font-size: 15px;
-	font-family: Arial;
-	text-align: center;
-	position: fixed;
-	display: none;
-	z-index: 100;
-	margin: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	height: 70px;
-}
-
-/* Want it to stick to the top i.e fixed positioning */
-#header{
-	position: fixed;
-	z-index: 100;
-	top: 0px;
-	margin: 0;
-	padding: 0;
-	left: 0;		
-	right : 0;
-	width: 100%;
-	height: 50px;
-	font-family: Arial;
-	/* Horizontal, Vertical, Blur, Color */
-	text-shadow: 1px 1px 1px black;
-	
-	/*Now I want to build the glass effect (Give me that CSS3 power!)*/
-	
-	border-bottom: 1px solid rgba(0,0,0,0.3); /* Don't want the header to blend with my background */
-	background: rgba(0,0,0,0.25);
-	/* To get that bottom gleaming/shining effect */
-	/* inset :: inner shadow :: horizontal, vertical (-ve because I want the gleam on the bottom), blur*/
-	box-shadow: inset 0 -1px rgba(255,255,255,0.3), inset 0 -15px rgba(255,255,255,0.2), inset 0 -20px 40px rgba(255, 255, 255, 0.25), inset 0 12px 50px rgba(0,0,0,0.3);
-}
-
-#header h2{
-	/* Not BOLD */
-	font-weight: normal;
-	font-size: 14px;
-	text-decoration: underline;
-	color: #CC0000;
-	margin-top: 10px;
-	margin-bottom: 5px;
-	margin-left: 10px;
-}
-
-#header p{
 	color: white;
-	font-size: 12px;
-	float: left;
-	/* (top,bottom), (left,right) */
-	padding: 0px 10px;
-	margin: 10px 0px;
 }
 
-#header img{
-	border: none;
+#thought{
+	text-align: center;
+	padding-top: 10px;
 }
 
-/* If I want my image in the header layout to be on the left */
-#header .img_left{
-	float: left;
-	margin-right: 10px;
-	width: 40px;
+#pagetop{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width:100%;
+	height: 80px;
+	background-image: url("../images/retina_wood.png");
+        position; absolute;
+        z-index: 100;
+	font-size: 23px;
+	padding-top: 8px;
+	padding-bottom: 50px;
+	transition: height 0.3s linear 0s, padding 0.3s linear 0s;
+	overflow:hidden;
+}
+#pagetop > #thought_menu{
+	position: absolute;
+	bottom: 0px;
+	width:100%;
+	background: #000000;
+	height: 60px;
+	transition: height 0.3s linear 0s;
 }
 
-#header li ul{
-	/* Don't need the bullet point */
-	list-style: none;
-	padding: 0px;
-	margin-top: 1px;
-}
-
-.clear{
-	clear: both;
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0px;
-	height: 0px;
-}
-
-#header .whiteBorder{ 
-	border: 1px solid white;
-}
-
-#header .black_box{
-		background: rgba(0, 0, 0, 0.4);
-		padding: 5px;
-		margin-bottom: 5px;
-		/* Compatible with Chrome */
-		border-radius: 5px;
-}
-
-#header #social_id{
+#pagetop #social_id{
 	float: right;
 	width: auto;
 	/* top (left,right) bottom */
@@ -342,7 +55,7 @@ a:active{
 }
 
 /* Individual social icon */
-#header #social_id li{
+#pagetop #social_id li{
 	margin-right: 12px;
 	float: left;
 	padding: 0px;
@@ -350,196 +63,131 @@ a:active{
 	list-style: none;
 }
 
-#header #social_id li img{
-	width: 24px;
-	height: 32px;
-}
-
-/* Individual social icon (on hover) */
-#header #social_id li:hover{
-	margin-top: 3px;
-}
-
-#header_menu{
-	margin: 0px;
-	padding: 0px;
-	width: auto;
-}
-
-/* element i.e the button */
-#header_menu li{
-	list-style: none;
-	float: left;
-	font-size: 12px;
-	/* top left bottom right */
-	padding: 12px 14px 20px 14px;
-	border-right: 1px solid rgba(0,0,0,0.4);
-	background: rgba(0,0,0,0.1);
-}
-
-#header_menu li:hover{
-	background: rgba(0,0,0,0.3);
-}
-
-#header_menu li a{
-	display: block;
-	color: #cccccc;
-	text-decoration: none;	
-}
-
-#header_menu li a:hover{
-	color: white;
-}
-
-#header_menu .BUTTON{
-	/* Change padding to move around the Home Button */
-	padding: 5px 8px 0px 14px;
-	border: none;
-	background: none;
-}
-#header_menu .BUTTON:hover{
-	background: none;
-}
-
-/* Menu Drop-Down */
-#header_menu li ul.dropdown{
-	display: none;
-}
-
-#header_menu li ul.dropdown:hover{
-	display: block;
-	position: absolute;
-	margin: 0px 0px 0px -15px;
-	top: 50px;
-	border: 1px solid black; 
-	border-top: none;
-	background: rgba(0,0,0,0.5);
-	border-radius: 0px 0px 7px 7px;
-}
-
-
-/* Drop-Down Default Links */
-
-#header_menu li:hover a{
-	color: #aaaaaa;
-}
-
-#header_menu li:hover a:hover{
-	color: white;
-}
-
-/* Header Link */
-
-#header_menu li:hover a.headerLinks{
-	font-size: 14px;
-	text-decoration: underline;
-	color: #cc000000;
-	margin-top: 10px;
-	margin-left: 10px;
-}
-
-#header_menu li:hover a.headerLinks:hover{
-	color: white;
-	cursor: pointer;
-}
-
-/* List links */
-
-#header_menu li:hover a.listLinks{
-	font-size: 12px;
-	color: #aaaaaa;
-	margin-left: 10px;
-}
-
-#header_menu li:hover a.listLinks:hover{
-	color: white;
-	cursor: pointer;
-}
-
-/* The buttons we want on the right */
-#header_menu .right{
-	float: right;
-	right: 0px;
-	margin-right: 2px;
-	border-right:none;
-	border-left: 1px solid rgba(0,0,0,0.3);
-}
-
-/* Layouts (1 column, 2 column, 3 column)*/
-#header .one_column_layout, #header .two_column_layout, #header .three_column_layout{
-	margin: 4px;
-	position: absolute;
-	padding-top: 15px;
+#side_menu_top{
+	z-index: 1000;
+	margin-top: -130px;
+	position: fixed;
 	text-align: left;
-	display: none;
-}
-
-/* Width Of Each Layout */
-#header .one_column_layout{
-	width: 140px;
-}
-
-#header .two_column_layout{
-	width: 280px;
-}
-
-#header .three_column_layout{
-	width: 420px;
-}
-
-/* Display Drop-Down Menus on Hover */
-#header_menu li:hover .one_column_layout,#header_menu li:hover .two_column_layout,#header_menu li:hover .three_column_layout{
-	display: block;
-	position: absolute;
-	margin: 0 0 0 -15px;
-	top: 50px;
-	background: rgba(0,0,0,0.5);
-	border-radius: 0px 0px 7px 7px;
-}
-
-/* All Columns must be placed inside a layout */
-#header .col_1, #header .col_2, #header .col_3{
-	display: inline;
-	float: left;
-	position: relative;
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-#header .col_1{
-	width: 130px;
-}
-
-#header .col_2{
-	width: 270px;
-}
-
-#header .col_3{
-	wdth: 410px;
-}
-
-dl{
-	left:25%;
-}
-
-dd{
-	margin: 0px;
-	padding: 1em 0;
-}
-
-dt{
+	padding-left: 20px;
+	padding-top: 8px;
 	cursor: pointer;
-	font-weight: bold;
-	font-size: 1.5em;
-	background: #e3e3e3;
-	border-bottom: 1px solid #c5c5c5;
-	border-top: 1px solid white;
+	background-image: url("../images/triangular.png");
+	width: 224px;
+	height: 27px;
+	border: solid 3px black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
 }
 
-dt:first-child{
-	border-top: none;
+#side_menu{
+	z-index: 1000;
+	margin-top: -89px;
+	margin-left: 0px;
+	width: 250px;
+	height: 480px;
+	position: fixed;
+	float: left;
+	background-image: url("../images/tweed.png");
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
-dt:nth-last-child(2){
-	border-bottom: none;
+#side_menu #menu{
+	text-align: center;
+	margin-top: -89px;
+	left: 50%;
+	width: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;		
+	padding: 0px;
+	overflow: hidden;
 }
+
+#side_menu #menu li{
+	margin-top: 20px;
+	margin-right: 0px;
+	padding: 0px;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-top: solid 4px black;
+	padding-bottom: 0px;
+	border-color: #4099FF;
+	border-radius: 12px;
+
+	transition: margin-top 0.2s linear 0s, padding 0.1s linear 0s;
+
+	/* No bullet points (again) */
+	list-style: none;
+}
+
+#homepage_image{
+
+}
+
+#welcome{
+	font-family: 'Ubuntu', serif;
+    font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+
+#homepage_content{
+	padding-top: 50px;
+	margin-top: 140px;
+	text-align: center;
+	font-family: 'Ubuntu', serif;
+	font-size: 28px;
+    text-decoration: none;
+	color: black;
+}
+
+ #left-container{
+	display: block-inline;
+	position: relative;
+	margin-top: 0px;
+	margin-left: 10px;
+	float: left;
+	width: 64%;
+ }
+
+ #right-container{
+ 	display: block-inline;
+ 	margin-right: 10px;
+	position: relative;
+	width: 30%;
+	float: right;
+	margin-top: 0px;
+ }
+
+/*Class Grow*/
+.grow {
+display: inline-block;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+/*Grow Hover Code*/
+.grow:hover, .grow:focus, .grow:active {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+/*Class Glow*/
+.glow {
+display: inline-block;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+-webkit-transition-property: box-shadow;
+transition-property: box-shadow;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+}
+/*Glow Hover Code*/
+.glow:hover, .glow:focus, .glow:active {
+ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
