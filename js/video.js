@@ -1,5 +1,16 @@
 //Execute when the Document is Ready
 jQuery(document).ready(function(){
+	
+	oneTimeFlag = true;
+	h = 0;
+
+	if(oneTimeFlag){
+		h = $("section#about").offset().top;
+		oneTimeFlag = false;
+
+		$('section#about').css('margin-top', $('video#vid-bg').height() + $('video#vid-bg').height()/8 - h);
+	}
+
 	$("video#vid-bg").on("loadmetadata", scaleVideo);
 	$(window).on("resize", scaleVideo);
 
@@ -39,6 +50,12 @@ jQuery(document).ready(function(){
 		//Set the Background Videos New Height and Width
 		$('video#vid-bg').height(scaledVideoHeight);
 		$('video#vid-bg').width(scaledVideoWidth);
+
+		if(scaledVideoHeight > h){
+
+			$('section#about').css('margin-top', scaledVideoHeight - h);
+		}
+
 
 	}
 });
