@@ -206,19 +206,19 @@ section.success a.active {
     }
 }
 
-#portfolio .portfolio-item {
+#experience .experience-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#experience .experience-item .experience-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption {
+#experience .experience-item .experience-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -229,11 +229,11 @@ section.success a.active {
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#experience .experience-item .experience-link .caption:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#experience .experience-item .experience-link .caption .caption-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -244,21 +244,21 @@ section.success a.active {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#experience .experience-item .experience-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#experience .experience-item .experience-link .caption .caption-content h3,
+#experience .experience-item .experience-link .caption .caption-content h4 {
     margin: 0;
 }
 
-#portfolio * {
+#experience * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #experience .experience-item {
         margin: 0 0 30px;
     }
 }
@@ -397,7 +397,7 @@ footer .footer-below {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+.experience-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -408,20 +408,20 @@ footer .footer-below {
     box-shadow: none;
 }
 
-.portfolio-modal .modal-content h2 {
+.experience-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
 }
 
-.portfolio-modal .modal-content img {
+.experience-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content .item-details {
+.experience-modal .modal-content .item-details {
     margin: 30px 0;
 }
 
-.portfolio-modal .close-modal {
+.experience-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -431,11 +431,11 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.experience-modal .close-modal:hover {
     opacity: .3;
 }
 
-.portfolio-modal .close-modal .lr {
+.experience-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -446,7 +446,7 @@ footer .footer-below {
     transform: rotate(45deg);
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.experience-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
@@ -456,7 +456,7 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.portfolio-modal .modal-backdrop {
+.experience-modal .modal-backdrop {
     display: none;
     opacity: 0;
 }
