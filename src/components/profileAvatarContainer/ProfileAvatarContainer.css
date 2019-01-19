@@ -1,0 +1,9 @@
+.profileAvatarContainer {
+  width: 20vw;
+  min-width: 12em;
+  min-height: 12em;
+  max-width: 20em;
+  max-height: 20em;
+  z-index: 2;
+  position: absolute;
+}
