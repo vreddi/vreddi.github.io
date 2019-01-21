@@ -1,8 +1,9 @@
 import React from 'react';
-import 'DescriptionSection.css';
+import './DescriptionSection.css';
 
-const DescriptionSection = () => (
+const DescriptionSection = (props) => (
   <div className="descriptionSection">
+    {props.children}
   </div>
 );
 

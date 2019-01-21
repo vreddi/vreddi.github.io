@@ -1,0 +1,21 @@
+.descriptionSectionRow {
+  display: block;
+  color: #515154;
+  font-size: 1.2em;
+}
+
+.descriptionSectionRow img {
+  display: inline;
+  height: 1.2em;
+}
+
+.descriptionSectionRow a {
+  display: inline;
+  text-decoration: none;
+  color: #1681df;
+}
+
+.descriptionSectionRow a:visited {
+  text-decoration: none;
+  color: #1681df;
+}
