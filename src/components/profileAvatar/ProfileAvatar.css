@@ -5,4 +5,25 @@
     margin-left: 50%;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
+
+.nameSection {
+    width: 20%;
+    margin-left: 65%;
+    min-width: 15em;
+    height: auto;
+    padding: 1em;
+  }
+  
+  .nameSection-name {
+    color: black;
+    font-weight: 700;
+    font-size: 1.75em;
+  }
+  
+  .nameSection-tag {
+    font-size: 1em;
+    color: #5f5b5b;
+  }

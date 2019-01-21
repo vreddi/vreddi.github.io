@@ -10,7 +10,6 @@ import * as microsoftImg from './assets/microsoft.png';
 import * as uiucImg from './assets/uiuc.png';
 import * as mufcImg from './assets/mufc.png';
 import TabContainer from './components/tabContainer/TabContainer';
-import NameSection from './components/nameSection/NameSection';
 import InnerContentArea from './components/innerContentArea/InnerContentArea';
 import DescriptionSection from './components/descriptionSection/DescriptionSection';
 import DescriptionSectionRow from './components/descriptionSectionRow/DescriptionSectionRow';
@@ -23,10 +22,13 @@ class App extends Component {
         <VideoCover />
         <ContentArea>
           <ProfileAvatarContainer>
-            <ProfileAvatar image={profileImg} />
+            <ProfileAvatar 
+              image={profileImg}
+              name="Vishrut Reddi"
+              tag="@vishrutreddi"
+            />
           </ProfileAvatarContainer>
           <TabContainer />
-          <NameSection name="Vishrut Reddi" tag="@vishrutreddi" />
           <InnerContentArea>
             <DescriptionSection>
               <DescriptionSectionRow
