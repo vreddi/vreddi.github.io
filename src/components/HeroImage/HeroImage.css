@@ -1,0 +1,21 @@
+.hero-image {
+  width: 50%;
+  height: 100%;
+  display: block;
+  float: right;
+  margin-right: 5em;
+  min-width: 50em;
+  min-height: 42em;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+      margin-left: 100%;
+  }
+
+  to {
+      margin-left: 0%;
+  }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Open+Sans&display=swap');
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 1em;
+}
+
+.logo-title {
+  color: #373839;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo-sub-title {
+  font-size: 1.2em;
+  color: #616265;
+  font-family: 'Cedarville Cursive', cursive;
+}
