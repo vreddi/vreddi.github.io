@@ -1,8 +1,8 @@
-.socialPanel {
+.social-panel {
   display: flex;
-  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
   justify-content: space-between;
   align-items: flex-end;
-  height: 100%;
-  width: 100%;
+  padding: 1em 1em;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './SocialPanel.css';
 
 const SocialPanel = (props) => (
-  <div className="socialPanel">
+  <div className="social-panel">
     {props.children}
   </div>
 );
