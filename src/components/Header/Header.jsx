@@ -17,18 +17,21 @@ const Header = (props) => (
         color="#8e9092"
         title="Github"
         size="2x"
+        link="https://github.com/vreddi"
       />
       <SocialBadge
         faIcon={faInstagram}
         color="#8e9092"
         title="Instagram"
         size="2x"
+        link="https://instagram.com/vishrutreddi"
       />
       <SocialBadge
         faIcon={faTwitter}
         color="#8e9092"
         title="Twitter"
         size="2x"
+        link="https://twitter.com/vishrutreddi"
       />
     </SocialPanel>
   </div>

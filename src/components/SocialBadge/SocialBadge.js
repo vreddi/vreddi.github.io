@@ -5,15 +5,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './SocialBadge.css';
 
-const SocialBadge  = (props) => (
-  <div className="social-badge">
+const SocialBadge = (props) => (
+  <a target="_blank"
+    rel="noopener noreferrer"
+    href={props.link}
+    className="social-badge"
+    role="button"
+  >
     <FontAwesomeIcon
       icon={props.faIcon}
       color={props.color}
       title={props.title}
       size={props.size}
     />
-  </div>
+  </a>
 );
 
 
@@ -37,6 +42,11 @@ SocialBadge.propTypes = {
    * Fize of the Font-Awesome icon.
    */
   size: PropTypes.string,
+
+  /**
+   * On click re-direction link
+   */
+  link: PropTypes.string,
 };
 
 export default SocialBadge;
