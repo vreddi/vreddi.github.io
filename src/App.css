@@ -3,7 +3,17 @@ body {
   width: 100%;
 }
 
-.App {
+.jumbo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5em;
+}
+
+.jumbo-section .jumbo-art {
+  margin-left: -24.5em;
+  width: 95%;
+  height: auto;
 }
 
 .App-logo {
