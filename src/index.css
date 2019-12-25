@@ -21,14 +21,12 @@ code {
 }
 
 
-<<<<<<< HEAD
 
 .App {
   background-color: #1a276f;
   height: 100vh;
   width: 100vw;
 }
-=======
 #root {
   width: 100%;
   height: 100%;
@@ -57,4 +55,3 @@ code {
   padding-top: 5em;
   color: #464444;
 }
->>>>>>> 3e11bf9969440e902d658de40e7d0dc3d68e1616

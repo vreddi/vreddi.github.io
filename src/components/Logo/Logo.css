@@ -1,29 +1,4 @@
-<<<<<<< HEAD
 .logo {
   height: 5em;
   width: auto;
-=======
-@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Open+Sans&display=swap');
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  height: fit-content;
-  padding: 1em;
-}
-
-.logo-title {
-  color: #373839;
-  font-size: 2em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.logo-sub-title {
-  font-size: 1.2em;
-  color: #616265;
-  font-family: 'Cedarville Cursive', cursive;
->>>>>>> 3e11bf9969440e902d658de40e7d0dc3d68e1616
 }
