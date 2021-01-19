@@ -2,6 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 import Profile from "../../Assets/Profile.png";
+import Home from "../../Assets/Home.png";
+import RealEstate from "../../Assets/RealEstate.png";
+import Articles from "../../Assets/Articles.png";
+import Music from "../../Assets/Music.png";
+import Connect from "../../Assets/Connect.png";
 
 const StyledDashboard = styled.div`
   display: flex;
@@ -19,7 +24,17 @@ const StyledDashboard = styled.div`
   padding: 1rem;
 `;
 
-const Link = styled.div``;
+const Link = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1rem;
+`;
+
+const LinkImage = styled.img`
+  height: 2.5rem;
+  margin-right: 1rem;
+`;
 
 const Avatar = styled.div`
   background-image: url(${Profile});
@@ -55,21 +70,25 @@ export const Dashboard = () => (
       <Name>Vishrut Reddi</Name>
       <Description>Software Engineer, Musician and Real Estate Investor</Description>
     </Author>
-    <Link>
-      <img src="" alt="" />
+    {/* <Link>
+      <LinkImage src={Home} alt="" />
       <h2>Home</h2>
     </Link>
     <Link>
-      <img src="" alt="" />
+      <LinkImage src={RealEstate} alt="" />
       <h2>Real Estate</h2>
     </Link>
     <Link>
-      <img src="" alt="" />
+      <LinkImage src={Music} alt="" />
       <h2>Music</h2>
     </Link>
     <Link>
-      <img src="" alt="" />
+      <LinkImage src={Articles} alt="" />
       <h2>Articles</h2>
     </Link>
+    <Link>
+      <LinkImage src={Connect} alt="" />
+      <h2>Connect</h2>
+    </Link> */}
   </StyledDashboard>
 );

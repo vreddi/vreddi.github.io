@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledBackground = styled.main`
   min-height: 100vh;
-  background: linear-gradient(to right top, #65efc9, #6cdbeb);
+  background: linear-gradient(to right top, #1c6fec, #1ca7ec);
   display: flex;
   align-items: center;
   justify-content: center;
