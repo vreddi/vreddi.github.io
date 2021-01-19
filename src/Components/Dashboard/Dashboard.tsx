@@ -70,7 +70,7 @@ export const Dashboard = () => (
       <Name>Vishrut Reddi</Name>
       <Description>Software Engineer, Musician and Real Estate Investor</Description>
     </Author>
-    {/* <Link>
+    <Link>
       <LinkImage src={Home} alt="" />
       <h2>Home</h2>
     </Link>
@@ -89,6 +89,6 @@ export const Dashboard = () => (
     <Link>
       <LinkImage src={Connect} alt="" />
       <h2>Connect</h2>
-    </Link> */}
+    </Link>
   </StyledDashboard>
 );
