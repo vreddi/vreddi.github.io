@@ -17,7 +17,7 @@ const Card = styled.div`
 `;
 
 const Image = styled.div`
-background-position: right bottom;
+  background-position: right bottom;
   background-image: url(${WavingBird});
   background-size: contain;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ export const WelcomeCard = () => (
           <InsightImageContainer>
             <InsightIcon src={Microsoft} height={40}/>
           </InsightImageContainer>
-          <InsightText>Software Engineer 2, Microsoft</InsightText>
+          <InsightText>Senior Software Engineer, Microsoft</InsightText>
         </InsightContainer>
 
         <InsightContainer>
