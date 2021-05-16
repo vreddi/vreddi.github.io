@@ -1,11 +1,18 @@
 import React from 'react';
 // import GlobalFonts from './GlobalFonts';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import DarkTheme from "./Theme/Dark.theme";
 import styled, { ThemeProvider } from 'styled-components';
 
-import { IntroductionCard } from "./Components/IntroductionCard";
-import { IntroductionBackground } from "./Components/IntroductionBackground";
+// import { IntroductionCard } from "./Components/IntroductionCard";
+// import { IntroductionBackground } from "./Components/IntroductionBackground";
+import { Home } from "./Home/Home.view";
 
 const Container = styled.div`
   display: flex;
@@ -30,12 +37,13 @@ const VideoContainer = styled.div`
 function App() {
   return (
     <ThemeProvider theme={DarkTheme}>
-      <VideoContainer>
-        <IntroductionBackground />
-      </VideoContainer>
-      <Container>
-        <IntroductionCard />
-      </Container>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </ThemeProvider>
   );
 }
