@@ -39,7 +39,6 @@ export class CodingCat extends React.Component {
   }
 
   componentDidMount() {
-    gsap.registerPlugin(DrawSVGPlugin);
     this.notes = document.querySelectorAll(".note");
 
     this.notes.forEach((note) => {
@@ -59,7 +58,6 @@ export class CodingCat extends React.Component {
     gsap.from(
       ".terminal-code line",
       {
-        drawSVG: "0%",
         duration: 0.1,
         stagger: 0.1,
         ease: "none",
