@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Legal } from "./Legal/Legal";
 import { Props } from "./Footer.types";
 import { Section } from "./Section/Section";
+import { MailMe } from "./MailMe/MailMe";
 
 const Container = styled.div`
   background: #f5f5f7;
@@ -18,7 +19,14 @@ const Container = styled.div`
 const Content = styled.div`
   padding: 1em;
 `;
-const SectionContainer = styled.div``;
+const SectionContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const UpperContent = styled.div`
+  display: flex;
+`;
 
 export class Footer extends React.Component<Props> {
   public getSections(): JSX.Element {
@@ -43,11 +51,24 @@ export class Footer extends React.Component<Props> {
     );
   }
 
+  public getMail(): JSX.Element {
+    return (
+      <MailMe
+        image={this.props.mail?.image as string}
+        onEmailClick={this.props.mail?.onEmailClick}
+        onResumeClick={this.props.mail?.onResumeClick}
+      />
+    );
+  }
+
   public render(): React.ReactNode {
     return (
       <Container>
         <Content>
-          {this.props.sections && this.getSections()}
+          <UpperContent>
+            {this.props.sections && this.getSections()}
+            {this.props.mail && this.getMail()}
+          </UpperContent>
           {this.props.legal && this.getLegal()}
         </Content>
       </Container>
