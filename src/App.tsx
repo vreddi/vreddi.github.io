@@ -13,6 +13,7 @@ import styled, { ThemeProvider } from 'styled-components';
 // import { IntroductionCard } from "./Components/IntroductionCard";
 // import { IntroductionBackground } from "./Components/IntroductionBackground";
 import { Home } from "./Home/Home.view";
+import { Books } from './Books/Books.view';
 
 const Container = styled.div`
   display: flex;
@@ -39,6 +40,12 @@ function App() {
     <ThemeProvider theme={DarkTheme}>
       <Router>
         <Switch>
+        <Route path="/books">
+            <Books />
+          </Route>
+          <Route path="/goals">
+
+          </Route>
           <Route path="/">
             <Home />
           </Route>
