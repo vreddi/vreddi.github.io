@@ -2,7 +2,7 @@ import React from 'react';
 // import GlobalFonts from './GlobalFonts';
 import './App.css';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -38,17 +38,10 @@ const VideoContainer = styled.div`
 function App() {
   return (
     <ThemeProvider theme={DarkTheme}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-        <Route path="/books">
-            <Books />
-          </Route>
-          <Route path="/goals">
-
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route path="/books" component={Books} />
+          <Route path="/" component={Home} />
         </Switch>
       </Router>
     </ThemeProvider>
