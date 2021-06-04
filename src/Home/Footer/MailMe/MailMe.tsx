@@ -8,6 +8,8 @@ const Container = styled.div`
   color: #515154;
   display: flex;
   flex-direction: column;
+  min-width: 250px;
+  justify-content: flex-start;
   align-items: center;
 `;
 
@@ -26,7 +28,6 @@ const Button = styled.button`
   font-weight: 300;
   display: block;
   margin: 0 auto;
-  margin-top: 80px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -48,6 +49,7 @@ const Button = styled.button`
 const Description = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 8px;
 `;
 
 const CompanyLogo = styled.img`
@@ -56,8 +58,16 @@ const CompanyLogo = styled.img`
   margin: 0em 0.4em;
 `;
 
+const CompanyContainer = styled.div`
+  display: flex;
+  margin-top: 5px;
+`;
+
 const ButtonContainer = styled.div`
   display: flex;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: space-around;
 `;
 
 export class MailMe extends React.Component<Props> {
@@ -66,8 +76,11 @@ export class MailMe extends React.Component<Props> {
       <Container>
         <Avatar image={this.props.image} />
         <Description>
-          Senior Software Engineer @ <CompanyLogo src={Microsoft} /> Microsoft
+          Senior Software Engineer
         </Description>
+        <CompanyContainer>
+          <CompanyLogo src={Microsoft} /> Microsoft
+        </CompanyContainer>
         <ButtonContainer>
           <Button>Resume</Button>
           <Button>Email</Button>

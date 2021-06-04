@@ -8,7 +8,6 @@ import { MailMe } from "./MailMe/MailMe";
 const Container = styled.div`
   background: #f5f5f7;
   width: 100%;
-  overflow: hidden;
   position: relative;
   z-index: 1;
   display: flex;
@@ -26,6 +25,13 @@ const SectionContainer = styled.div`
 
 const UpperContent = styled.div`
   display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 `;
 
 export class Footer extends React.Component<Props> {
