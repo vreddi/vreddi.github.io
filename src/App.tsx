@@ -12,7 +12,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 // import { IntroductionCard } from "./Components/IntroductionCard";
 // import { IntroductionBackground } from "./Components/IntroductionBackground";
-import { Home } from "./Home/Home.view";
+import { Main } from "./Home/Main.view";
 import { Books } from './Books/Books.view';
 
 const Container = styled.div`
@@ -41,7 +41,7 @@ function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/books" component={Books} />
-          <Route path="/" component={Home} />
+          <Route path="/" component={Main} />
         </Switch>
       </Router>
     </ThemeProvider>
