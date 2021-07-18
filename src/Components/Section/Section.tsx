@@ -4,6 +4,7 @@ import { Theme } from "Theme/Theme.types";
 import { Props } from "./Section.types";
 
 const Container = styled.div`
+  font-family: ${(props: { theme: Theme }) => props.theme.text.font};;
   padding: 2rem 0 4rem;
 `;
 
@@ -14,6 +15,7 @@ const Title = styled.div`
 
 const SubTitle = styled.div`
   display: block;
+  color: ${(props: { theme: Theme }) => props.theme.textColor};
   font-size: ${(props: { theme: Theme }) => props.theme.text.smallFontSize};
   margin-bottom: ${(props: { theme: Theme }) => props.theme.spacing.mb_3};
   text-align: center;

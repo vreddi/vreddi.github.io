@@ -29,15 +29,22 @@ const theme: Theme = {
   spacing,
   measurements,
   hueColor: "250",
-  firstColor: "hsl(250, 69%, 61%)",
-  firstColorSecond: "hsl(250, 69%, 61%)",
-  firstColorAlt: "hsl(250, 57%, 53%)",
-  firstColorLighter: "hsl(250, 92%, 85%)",
-  titleColor: "hsl(250, 8%, 15%)",
-  textColor: "hsl(250, 8%, 45%)",
-  textColorLight: "hsl(250, 8%, 65%)",
-  inputColor: "hsl(250, 70%, 96%)",
-  bodyColor: "hsl(250, 60%, 99%)",
+  /**
+   * Hue color
+   * Purple - 250
+   * Green - 142
+   * Blue - 230
+   * Pink - 340
+   */
+  firstColor: "hsl(142, 69%, 61%)",
+  firstColorSecond: "hsl(142, 69%, 61%)",
+  firstColorAlt: "hsl(142, 57%, 53%)",
+  firstColorLighter: "hsl(142, 92%, 85%)",
+  titleColor: "hsl(142, 8%, 15%)",
+  textColor: "hsl(142, 8%, 45%)",
+  textColorLight: "hsl(142, 8%, 65%)",
+  inputColor: "hsl(142, 70%, 96%)",
+  bodyColor: "hsl(142, 60%, 99%)",
   containerColor: "#FFF",
 
 };

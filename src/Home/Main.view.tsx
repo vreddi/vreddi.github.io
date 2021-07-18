@@ -6,6 +6,7 @@ import { getLegal, getMail, getSections } from "../Utils/Footer";
 import { Header } from "../Components/Header";
 import { Section } from "../Components/Section";
 import { Home } from "./Home/Home";
+import { About } from "./About/About";
 
 const Container = styled.div`
   height: 100%;
@@ -83,6 +84,7 @@ export const Main: React.FC = () => {
       />
       <main>
         <Home />
+        <About />
       </main>
     </>
   );

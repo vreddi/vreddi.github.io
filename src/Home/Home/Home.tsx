@@ -94,7 +94,7 @@ const ContactButtonIcon = styled.i`
 `;
 
 const HomeScroll = styled.div`
-  display: none;
+  margin-top: ${(props: { theme: Theme }) => props.theme.spacing.mb_1_5};
 `;
 
 const HomeScrollButton = styled.a`
@@ -114,6 +114,10 @@ const ScrollMouseIcon = styled.i`
 `;
 
 const HomeScrollName = styled.span`
+  display: inline-block;
+  clear: both;
+  overflow: hidden;
+  white-space: nowrap;
   font-size: ${(props: { theme: Theme }) => props.theme.text.smallFontSize};
   color: ${(props: { theme: Theme }) => props.theme.titleColor};
   font-weight: ${(props: { theme: Theme }) => props.theme.text.fontMedium};
