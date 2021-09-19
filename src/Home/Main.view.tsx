@@ -84,7 +84,7 @@ export const Main: React.FC = () => {
       />
       <main>
         <Home />
-        <About />
+        {/* <About /> */}
       </main>
     </>
   );

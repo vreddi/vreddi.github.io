@@ -46,6 +46,11 @@ const NavMenu = styled.div<{ showMenu: boolean }>`
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
   }
+
+  /* Small devices */
+  @media screen and (max-width: 350px) {
+    padding: 2rem .25rem 4rem;
+  }
 `;
 
 const NavList = styled.ul`
@@ -54,6 +59,11 @@ const NavList = styled.ul`
 
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+
+  /* Small devices */
+  @media screen and (max-width: 350px) {
+    column-gap: 0;
+  }
 `;
 
 const NavItem = styled.li`

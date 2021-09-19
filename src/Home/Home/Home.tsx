@@ -13,6 +13,12 @@ const Container = styled.div`
   max-width: 768px;
   margin-left: ${(props: { theme: Theme }) => props.theme.spacing.mb_1_5};
   margin-right: ${(props: { theme: Theme }) => props.theme.spacing.mb_1_5};
+
+  /* Small devices */
+  @media screen and (max-width: 350px) {
+    margin-left: ${(props: { theme: Theme }) => props.theme.spacing.mb_1};
+    margin-right: ${(props: { theme: Theme }) => props.theme.spacing.mb_1};
+  }
 `;
 
 const Content = styled.div`
@@ -20,12 +26,23 @@ const Content = styled.div`
   grid-template-columns: .5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
+
+  /* Small devices */
+  @media screen and (max-width: 350px) {
+    grid-template-columns: .25fr 3fr;
+  }
+
+  /* Medium devices */
+  @media screen and (min-width: 568px) {
+    grid-template-columns: 0.3fr 1.3fr 1fr;
+  }
 `;
 
 const Social = styled.div`
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
+  margin-right: ${(props: { theme: Theme }) => props.theme.spacing.mb_0_75};
 `;
 
 const SocialIcon = styled.a`
@@ -38,11 +55,35 @@ const SocialIcon = styled.a`
 `;
 
 const HomeImage = styled.div`
+
+  justify-self: center;
+
+  /* Medium devices */
+  @media screen and (min-width: 568px) {
+    order: 1;
+  }
 `;
 
 const HomeBlob = styled.svg`
-  width: 200px;
+  width: 180px;
+  transition: width 0.3s ease-in-out;
   fill: ${(props: { theme: Theme }) => props.theme.firstColor};
+
+  /* Small devices */
+  @media screen and (max-width: 350px) {
+    width: 180px;
+  }
+
+  /* Small-Medium devices */
+  @media screen and (min-width: 450px) {
+    width: 200px;
+  }
+
+
+  /* Medium devices */
+  @media screen and (min-width: 568px) {
+    width: 220px;
+  }
 `;
 
 const HomeBlobImage = styled.image`
@@ -52,6 +93,11 @@ const HomeBlobImage = styled.image`
 
 const HomeData = styled.div`
   grid-column: 1/3;
+
+    /* Medium devices */
+    @media (min-width: 568px) {
+      grid-column: initial !important;
+    }
 `;
 
 const HomeTitle = styled.h1`
@@ -94,7 +140,19 @@ const ContactButtonIcon = styled.i`
 `;
 
 const HomeScroll = styled.div`
-  margin-top: ${(props: { theme: Theme }) => props.theme.spacing.mb_1_5};
+  display: none;
+  margin-top: ${(props: { theme: Theme }) => props.theme.spacing.mb_1};
+
+  /* Small height devices */
+  @media screen and (max-height: 640px) {
+    display: inherit;
+  }
+`;
+
+const HomeScrollContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;
 
 const HomeScrollButton = styled.a`
@@ -167,25 +225,30 @@ export const Home: React.FC = () => {
           <HomeData>
             <HomeTitle>Hi, I'm Vishrut</HomeTitle>
             <TextLoop>
-              <HomeSubTitle>Frontend developer</HomeSubTitle>
-              <HomeSubTitle>Musician</HomeSubTitle>
-              <HomeSubTitle>Investor</HomeSubTitle>
+              <HomeSubTitle>💻 Software Engineer</HomeSubTitle>
+              <HomeSubTitle>🎸 Musician</HomeSubTitle>
+              <HomeSubTitle>🏠 Real Estate Investor</HomeSubTitle>
+              <HomeSubTitle>💪 Gym Chad</HomeSubTitle>
+              <HomeSubTitle>🏂 Newbie Snowboarder</HomeSubTitle>
+              <HomeSubTitle>⚽ MUFC Supporter</HomeSubTitle>
             </TextLoop>
             <HomeDescription>High level experience in web design and development knowledge, producing quality work.</HomeDescription>
             <ContactButton href="#contact">
               Contact Me <ContactButtonIcon className="uil uil-message" />
             </ContactButton>
           </HomeData>
-
-          <HomeScroll>
-            <HomeScrollButton href="#about">
-              <ScrollMouseIcon className="uil uil-mouse-alt" />
-              <HomeScrollName>Scroll down</HomeScrollName>
-              <HomeScrollArrow className="uil uil-arrow-down" />
-            </HomeScrollButton>
-          </HomeScroll>
         </Content>
       </Container>
+
+      <HomeScrollContainer>
+        <HomeScroll>
+          <HomeScrollButton href="#about">
+            <ScrollMouseIcon className="uil uil-mouse-alt" />
+            <HomeScrollName>Scroll down</HomeScrollName>
+            <HomeScrollArrow className="uil uil-arrow-down" />
+          </HomeScrollButton>
+        </HomeScroll>
+      </HomeScrollContainer>
     </Section>
   );
 }
