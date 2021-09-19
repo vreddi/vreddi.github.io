@@ -12,6 +12,13 @@ const StyledHeader = styled.header`
   color: ${(props: { theme: Theme }) => props.theme.textColor};
   z-index: ${(props: { theme: Theme }) => props.theme.spacing.z_fixed};
   background-color: ${(props: { theme: Theme }) => props.theme.bodyColor};
+
+  /* Large devices */
+  @media screen and (min-width: 768px) {
+    top: 0;
+    bottom: initial;
+    padding: 0 1rem;
+  }
 `;
 
 const Nav = styled.nav`
@@ -22,6 +29,12 @@ const Nav = styled.nav`
   height: ${(props: { theme: Theme }) => props.theme.measurements.headerHeight};
   margin-left: ${(props: {theme: Theme}) => props.theme.spacing.mb_1_5};
   margin-right: ${(props: {theme: Theme}) => props.theme.spacing.mb_1_5};
+
+  /* Large devices */
+  @media screen and (min-width: 768px) {
+    height: calc(${(props: { theme: Theme }) => props.theme.measurements.headerHeight} + 1.5rem);
+    column-gap: 1rem;
+  }
 `;
 
 const NavLogo = styled.a`
@@ -51,6 +64,11 @@ const NavMenu = styled.div<{ showMenu: boolean }>`
   @media screen and (max-width: 350px) {
     padding: 2rem .25rem 4rem;
   }
+
+  /* Large devices */
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 `;
 
 const NavList = styled.ul`
@@ -63,6 +81,12 @@ const NavList = styled.ul`
   /* Small devices */
   @media screen and (max-width: 350px) {
     column-gap: 0;
+  }
+
+  /* Large devices */
+  @media screen and (min-width: 768px) {
+    display: flex;
+    column-gap: 2rem;
   }
 `;
 
@@ -89,6 +113,11 @@ const NavButtons = styled.div`
 
 const NavIcon = styled.i`
   font-size: 1.2rem;
+
+  /* Large devices */
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
 const NavToggle = styled.div`
@@ -99,6 +128,11 @@ const NavToggle = styled.div`
 
   :hover {
     color: ${(props: { theme: Theme }) => props.theme.firstColor};
+  }
+
+  /* Large devices */
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `;
 
@@ -112,6 +146,11 @@ const NavClose = styled.i`
 
   :hover {
     color: ${(props: { theme: Theme }) => props.theme.firstColorAlt};
+  }
+
+  /* Large devices */
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `;
 

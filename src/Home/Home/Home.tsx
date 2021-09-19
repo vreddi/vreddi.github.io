@@ -19,6 +19,13 @@ const Container = styled.div`
     margin-left: ${(props: { theme: Theme }) => props.theme.spacing.mb_1};
     margin-right: ${(props: { theme: Theme }) => props.theme.spacing.mb_1};
   }
+
+  /* Large devices */
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 5rem;
+  }
 `;
 
 const Content = styled.div`
@@ -35,6 +42,12 @@ const Content = styled.div`
   /* Medium devices */
   @media screen and (min-width: 568px) {
     grid-template-columns: 0.3fr 1.3fr 1fr;
+  }
+
+  /* Large devices */
+  @media screen and (min-width: 768px) {
+    padding-top: 5.5rem;
+    column-gap: 2rem;
   }
 `;
 
@@ -79,10 +92,14 @@ const HomeBlob = styled.svg`
     width: 200px;
   }
 
-
   /* Medium devices */
   @media screen and (min-width: 568px) {
     width: 220px;
+  }
+
+  /* Large devices */
+  @media screen and (min-width: 768px) {
+    width: 270px;
   }
 `;
 
@@ -231,6 +248,7 @@ export const Home: React.FC = () => {
               <HomeSubTitle>💪 Gym Chad</HomeSubTitle>
               <HomeSubTitle>🏂 Newbie Snowboarder</HomeSubTitle>
               <HomeSubTitle>⚽ MUFC Supporter</HomeSubTitle>
+              <HomeSubTitle>🎮 Gamer</HomeSubTitle>
             </TextLoop>
             <HomeDescription>High level experience in web design and development knowledge, producing quality work.</HomeDescription>
             <ContactButton href="#contact">
