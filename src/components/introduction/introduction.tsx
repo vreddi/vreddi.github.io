@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 const greetings = [
@@ -17,26 +16,6 @@ const greetings = [
 ];
 
 export const Introduction = () => {
-  const [_theme, setTheme] = useState<"light" | "dark">("light");
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("theme") as
-      | "light"
-      | "dark"
-      | null;
-    if (storedTheme) {
-      setTheme(storedTheme);
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    }
-    // Listen for theme changes
-    const media = window.matchMedia("(prefers-color-scheme: dark)");
-    const handler = (e: MediaQueryListEvent) =>
-      setTheme(e.matches ? "dark" : "light");
-    media.addEventListener("change", handler);
-    return () => media.removeEventListener("change", handler);
-  }, []);
-
   return (
     <div className="flex flex-col my-0 md:my-12">
       <div className="text-3xl md:text-5xl font-serif font-bold flex flex-row">
