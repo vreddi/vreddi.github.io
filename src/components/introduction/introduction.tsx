@@ -75,7 +75,7 @@ export const Introduction = () => {
       <div className="mt-4">
         <div className="flex flex-row space-x-4">
           <a
-            href="https://youtube.com/JustinPoliachik"
+            href="https://www.youtube.com/@VishrutReddi"
             className="w-6 h-6 hover:text-[#90B4CE] transition-colors duration-300"
           >
             <svg
@@ -92,7 +92,7 @@ export const Introduction = () => {
             </svg>
           </a>
           <a
-            href="https://github.com/Jpoliachik"
+            href="https://github.com/vreddi"
             className="w-6 h-6 hover:text-[#90B4CE] transition-colors duration-300"
           >
             <svg
@@ -109,7 +109,7 @@ export const Introduction = () => {
             </svg>
           </a>
           <a
-            href="https://linkedin.com/in/justinpoliachik/"
+            href="https://www.linkedin.com/in/vishrutreddi/"
             className="w-6 h-6 hover:text-[#90B4CE] transition-colors duration-300"
           >
             <svg
