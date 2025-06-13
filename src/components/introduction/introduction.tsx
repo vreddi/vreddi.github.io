@@ -1,8 +1,4 @@
 "use client";
-import TikTok from "@/public/icons/tiktok.svg";
-import Document from "@/public/icons/document.svg";
-import Link from "@/public/icons/link.svg";
-import Image from "next/image";
 
 import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
@@ -20,21 +16,8 @@ const greetings = [
   "Yo",
 ];
 
-const randomIndex = (excluding?: number) => {
-  let values = [...greetings];
-  if (excluding) {
-    values = values.filter((_, i) => i !== excluding);
-  }
-  const value = Math.floor(Math.random() * values.length);
-  return value;
-};
-
-const fillColor = "#262626";
-
 export const Introduction = () => {
-  const initialGreetingIndex = new Date().getDate() % greetings.length;
-  const [index, setIndex] = useState(initialGreetingIndex);
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [_theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme") as
