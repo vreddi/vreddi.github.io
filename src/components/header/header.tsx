@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { Input } from "@/components/_shadcn/ui/input";
+import { Button } from "@/components/_shadcn/ui/button";
 
 export const Header: React.FC = () => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -42,18 +44,12 @@ export const Header: React.FC = () => {
       <div className="w-full h-14 md:h-20 backdrop-blur-2xl backdrop-saturate-200 justify-center border-b rounded-b-lg transition-colors duration-300">
         <div className="h-full w-full md:max-w-3xl mx-auto px-4">
           <div className="flex h-full flex-row items-center justify-between font-sans">
-            <Link href="/" className="flex flex-row items-center">
-              <div>
-                <div
-                  className="bg-cover bg-center bg-[position:center_9%] bg-[size:74%] h-10 w-10 md:h-14 md:w-14 rounded-full transition-all duration-300
-                    bg-[url('../../public/memoji-light.png')] hover:bg-[url('../../public/memoji-wink-light.png')]
-                    dark:bg-[url('../../public/memoji-dark.png')] dark:hover:bg-[url('../../public/memoji-wink-dark.png')]"
-                />
-              </div>
-              <div className="flex flex-1 ml-2 md:ml-4 text-sm md:text-lg font-light text-apple-text-light dark:text-apple-text-dark relative transition-colors duration-300">
-                <span className="animate-text-reveal">Vishrut Reddi</span>
-              </div>
-            </Link>
+            <div className="flex w-full max-w-sm items-center gap-2">
+              <Input type="email" placeholder="Email" />
+              <Button type="submit" variant="outline">
+                Subscribe
+              </Button>
+            </div>
             <div className="flex flex-row ml-4 items-center space-x-3 md:space-x-8 font-semibold text-apple-text-light dark:text-apple-text-dark transition-colors duration-300">
               {/* <Link
                 href="/#projects"

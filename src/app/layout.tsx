@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Inter } from "next/font/google";
+import { SidebarProvider } from "@/components/sidebar";
+import { Sidebar } from "@/components/sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,11 +12,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body className="light">
-        <Header />
-        {children}
-      </body>
-    </html>
+    <SidebarProvider>
+      <html lang="en" className={inter.className}>
+        <body className="light">
+          {/* Header - always on top */}
+          <Sidebar />
+
+          {/* Main content area: sidebar + page content */}
+          <div className="flex min-h-screen flex-col w-full">
+            <Header />
+            {children}
+          </div>
+        </body>
+      </html>
+    </SidebarProvider>
   );
 }
