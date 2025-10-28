@@ -100,6 +100,8 @@
   transition: all 0.3s ease;
   width: fit-content;
   letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .cta-button:hover {
@@ -215,27 +217,74 @@
 }
 
 @media (max-width: 968px) {
+  .hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .hero-title {
-    font-size: clamp(2.5rem, 10vw, 4rem);
+    font-size: clamp(2rem, 10vw, 3rem);
   }
 
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .profile-pic,
+  .profile-pic-placeholder {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile-pic-placeholder {
+    font-size: 1.2rem;
+  }
+
+  .profile-name {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  /* Hide the floating image section on mobile */
   .hero-right {
-    order: -1;
-  }
-
-  .illustration-container {
-    max-width: 350px;
+    display: none;
   }
 
   .scroll-indicator {
     bottom: 1rem;
     right: 50%;
     transform: translateX(50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 9vw, 2.5rem);
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .profile-section {
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-left {
+    gap: 1.5rem;
   }
 }
 

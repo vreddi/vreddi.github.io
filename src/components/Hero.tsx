@@ -31,13 +31,13 @@ export const Hero = () => {
           </h1>
           
           <p className="hero-description">
-            A tireless developer that works against the clock<br />
-            to squeeze as much learning into a day,
+            I architect with taste, execute with care: performance budgets, a11y baked in,
+            and tooling that lifts the whole team.
           </p>
           
-          <button className="cta-button">
+          <a href="https://linkedin.com/in/vishrutreddi" target="_blank" rel="noopener noreferrer" className="cta-button">
             VIEW RESUME
-          </button>
+          </a>
         </div>
         
         <div className="hero-right">
