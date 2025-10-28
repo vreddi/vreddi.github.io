@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import './About.css';
 
 export const About = () => {
+  const [imageError, setImageError] = useState(false);
+
   return (
     <section className="about" id="about">
       <div className="about-content">
@@ -19,9 +22,18 @@ export const About = () => {
         
         <div className="about-image-container">
           <div className="about-title-overlay">About Me</div>
-          <div className="about-image-placeholder">
-            <span>Your Photo Here</span>
-          </div>
+          {!imageError ? (
+            <img 
+              src="/assets/me.jpeg" 
+              alt="About Me" 
+              className="about-image"
+              onError={() => setImageError(true)}
+            />
+          ) : (
+            <div className="about-image-placeholder">
+              <span>Your Photo Here</span>
+            </div>
+          )}
         </div>
       </div>
     </section>

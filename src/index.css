@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Dotted background pattern */
+/* Dotted background pattern with pulse animation */
 body::before {
   content: '';
   position: fixed;
@@ -31,10 +31,22 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
+  background-image: radial-gradient(circle, #e0e0e0 1.5px, transparent 1.5px);
   background-size: 30px 30px;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.6;
+  animation: pulse-dots 4s ease-in-out infinite;
+}
+
+@keyframes pulse-dots {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
 }
 
 code {

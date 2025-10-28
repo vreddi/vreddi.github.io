@@ -1,19 +1,31 @@
+import { useState } from 'react';
 import './Hero.css';
 
 export const Hero = () => {
+  const [imageError, setImageError] = useState(false);
+
   return (
     <section className="hero">
       <div className="hero-content">
         <div className="hero-left">
           <div className="profile-section">
-            <div className="profile-pic-placeholder">VR</div>
+            {!imageError ? (
+              <img 
+                src="/assets/me.jpeg" 
+                alt="Vishrut Reddi" 
+                className="profile-pic"
+                onError={() => setImageError(true)}
+              />
+            ) : (
+              <div className="profile-pic-placeholder">VR</div>
+            )}
             <span className="profile-name">Vishrut Reddi--</span>
           </div>
           
           <h1 className="hero-title">
             Developer from<br />
             <span className="location">
-              Seattle
+              Seattle, WA
               <span className="highlight"></span>
             </span>
           </h1>
@@ -30,13 +42,16 @@ export const Hero = () => {
         
         <div className="hero-right">
           <div className="illustration-container">
-            {/* You can replace this with a 3D model using Spline or an illustration */}
             <div className="illustration-placeholder">
               <div className="floating-element element-1">💻</div>
-              <div className="floating-element element-2">🎨</div>
+              <div className="floating-element element-2">🎸</div>
               <div className="floating-element element-3">⚡</div>
               <div className="character">
-                <div className="character-body"></div>
+                <img 
+                  src="/assets/1380f2d5-60aa-41ed-ac02-819bb0c7406b.JPG" 
+                  alt="Hero" 
+                  className="character-image"
+                />
               </div>
             </div>
           </div>
