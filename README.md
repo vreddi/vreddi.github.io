@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# vreddi.github.io
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal website built with React + TypeScript + Vite, deployed to GitHub Pages.
 
-Currently, two official plugins are available:
+## 🚀 Deployment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This site automatically deploys to GitHub Pages when you push to the `main` branch.
 
-## React Compiler
+**Important**: Make sure to configure GitHub Pages in your repository settings:
+1. Go to **Settings** → **Pages**
+2. Under **Source**, select **GitHub Actions**
+3. The workflow will automatically deploy on every push to `main`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Visit: [vishrutreddi.com](https://vishrutreddi.com) or [vreddi.github.io](https://vreddi.github.io)
 
-## Expanding the ESLint configuration
+## 🛠️ Local Development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# Install dependencies
+pnpm install
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Start dev server
+pnpm dev
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Build for production
+pnpm build
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Preview production build
+pnpm preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **pnpm** - Package manager
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Project Structure
+
 ```
+vreddi.github.io/
+├── src/              # Source code
+├── public/           # Static assets
+├── dist/             # Production build (generated)
+├── .github/
+│   └── workflows/
+│       └── deploy.yml # GitHub Pages deployment
+├── index.html        # Entry point
+├── vite.config.ts    # Vite configuration
+└── package.json      # Dependencies
+```
+
+## 🔧 Configuration
+
+- **Base URL**: Set to `/` in `vite.config.ts` for user/organization GitHub Pages
+- **Custom Domain**: Configured via `CNAME` file (vishrutreddi.com)
+- **Build Output**: `dist/` directory (deployed to GitHub Pages)
